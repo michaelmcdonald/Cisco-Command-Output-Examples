@@ -1,0 +1,17 @@
+R1# show ip protocols 
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "ospf 1"
+  Outgoing update filter list for all interfaces is not set 
+  Incoming update filter list for all interfaces is not set 
+  Router ID 1.1.1.1 
+  Number of areas in this router is 1. 1 normal 0 stub 0 nssa 
+  Maximum path: 4
+  Routing for Networks:
+    10.0.0.0 0.255.255.255 area 0 
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    2.2.2.2              110      00:14:32
+    3.3.3.3              110      00:14:32
+    10.1.44.4            110      00:14:42
+  Distance: (default is 110)

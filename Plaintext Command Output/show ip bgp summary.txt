@@ -1,0 +1,6 @@
+R1# show ip bgp summary 
+BGP router identifier 192.0.2.1, local AS number 1001 
+BGP table version is 1, main routing table version 1
+
+Neighbor        V          AS MagRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+198.51.100.2    4           1       0       0        1    0    0 00:00:10 Idle (Admin)

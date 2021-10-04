@@ -1,0 +1,30 @@
+R1# configure-terminal
+R1(config)# router bgp <local-asn>
+R1(config-router)# bgp router-id <router-id> 
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# no bgp default ipv4-unicast 
+R1(config-router)# neighbor <neighbor-ipv6-addr> remote-as <remote-asn> 
+!
+R1(config-router)# address-family ipv6
+R1(config-router-af)# neighbor <neighbor-ipv6-addr> activate
+! select to redistribute all connected networks
+R1(config-router-af)# redistribute connected
+! OR specific specific network to advertise
+R1(config-router-af)# network <ipv6-network-addr>/<prefix>
+R1(config-router-af)# end
+
+
+R1# configure-terminal
+R1(config)# router bgp 65100 
+R1(config-router)# bgp router-id 192.168.1.1 
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# no bgp default ipv4-unicast 
+R1(config-router)# neighbor 2001:DB8:0:12::2 remote-as 65200 
+!
+R1(config-router)# address-family ipv6
+R1(config-router-af)# neighbor 2001:DB8:0:12::2 activate
+! select to redistribute all connected networks
+R1(config-router-af)# redistribute connected
+! OR specific specific network to advertise
+R1(config-router-af)# network 2001:DB8::2/128
+R1(config-router-af)# end

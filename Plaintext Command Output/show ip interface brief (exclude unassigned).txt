@@ -1,0 +1,6 @@
+SW1# show ip interface brief | exclude unassigned
+Interface              IP-Address      OK? Method Status                 Protocol
+Vlan10                 10.10.10.1      YES manual up                     up 
+Vlan99                 10.99.99.1      YES manual up                     up 
+GigabitEthernet1/0/14  10.20.20.1      YES manual up                     up 
+GigabitEthernet1/0/23  192.168.1.1     YES manual down                   down

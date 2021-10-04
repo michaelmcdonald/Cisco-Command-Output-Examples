@@ -1,0 +1,6 @@
+R1# debug ppp authentication 
+PPP authentication debugging is on 
+! Lines omitted for brevity 
+*Nov 18 23:45:48.820: Se0/0/0 CHAP: O CHALLENGE id 1 len 23 from "R1" 
+*Nov 18 23:45:48.820: Se0/0/0 CHAP: I RESPONSE id 1 len 23 from "R2" 
+*Nov 18 23:45:48.820: Se0/0/0 CHAP: O FAILURE id 1 len 25 msg is "Authentication failed"

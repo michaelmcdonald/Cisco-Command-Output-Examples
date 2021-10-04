@@ -1,0 +1,6 @@
+R1# show bgp ipv4 unicast | begin Network
+     Network          Next Hop            Metric LocPrf Weight Path
+ *   10.12.1.0/24     10.12.1.2                0             0 65200 i
+ *>                   0.0.0.0                  0         32768 i
+ *>  192.168.1.1/32   0.0.0.0                  0         32768 i
+ *>  192.168.2.2/32   10.12.1.2                0             0 65200 i

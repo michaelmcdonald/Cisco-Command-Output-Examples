@@ -1,0 +1,22 @@
+SW3# show spanning-tree interface gi1/0/1 detail
+! Output omitted for brevity
+ Port 1 (GigabitEthernet1/0/1) of VLAN0001 is root forwarding 
+   Port path cost 4, Port priority 128, Port Identifier 128.1. 
+   Designated root has priority 32769, address 0062.ec9d.c500 
+   Designated bridge has priority 32769, address 0062.ec9d.c500 
+   Designated port id is 128.3, designated path cost 0 
+   Timers: message age 16, forward delay 0, hold 0 
+   Number of transitions to forwarding state: 1 
+   Link type is point-to-point by default
+   BPDU: sent 15, received 45908
+
+ Port 1 (GigabitEthernet1/0/1) of VLAN0010 is root forwarding 
+   Port path cost 4, Port priority 128, Port Identifier 128.1. 
+   Designated root has priority 32778, address 0062.ec9d.c500 
+   Designated bridge has priority 32778, address 0062.ec9d.c500 
+   Designated port id is 128.3, designated path cost 0 
+   Timers: message age 15, forward delay 0, hold 0 
+   Number of transitions to forwarding state: 1 
+   Link type is point-to-point by default MAC 
+   BPDU: sent 15, received 22957
+...

@@ -1,0 +1,22 @@
+R1# show ip ospf interface
+! Output omitted for brevity
+Loopback0 is up, line protocol is up 
+  Internet Address 192.168.1.1/32, Area 0, Attached via Network Statement 
+  Process ID 1, Router ID 192.168.1.1, Network Type LOOPBACK, Cost: 1 
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name 
+        0           1         no          no            Base 
+  Loopback interface is treated as a stub Host 
+GigabitEthernet0/1 is up, line protocol is up 
+  Internet Address 10.123.4.1/24, Area 0, Attached via Network Statement 
+  Process ID 1, Router ID 192.168.1.1, Network Type BROADCAST, Cost: 1 
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name 
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State DROTHER, Priority 1 
+  Designated Router (ID) 192.168.4.4, Interface address 10.123.4.4 
+  Backup Designated router (ID) 192.168.3.3, Interface address 10.123.4.3
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+..
+  Neighbor Count is 3, Adjacent neighbor count is 2 
+    Adjacent with neighbor 192.168.3.3 (Backup Designated Router) 
+    Adjacent with neighbor 192.168.4.4 (Designated Router) 
+  Suppress hello for 0 neighbor(s)

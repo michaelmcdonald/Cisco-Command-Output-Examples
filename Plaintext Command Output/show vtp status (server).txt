@@ -1,0 +1,29 @@
+SW1# show vtp status 
+VTP Version capable              : 1 to 3
+VTP version running              : 3
+VTP Domain Name                  : CISCO 
+VTP Pruning Mode                 : Disabled 
+VTP Traps Generation             : Disabled 
+Device ID                        : 0062.ec9d.c500
+
+Feature VLAN: 
+--------------
+VTP Operating Mode                : Server
+Number of existing VLANs          : 5
+Number of existing extended VLANs : 0 
+Maximum VLANs supported locally   : 4096
+Configuration Revision            : 1 
+Primary ID                        : 0062.ec9d.c500 
+Primary Description               : SW1 
+MD5 digest                        : 0x9D 0xE3 0xCD 0x04 0x22 0x70 0xED 0x73 
+                                    0x96 0xDE 0x0B 0x7A 0x15 0x65 0xE2 0x65
+
+! The following information is used for other functions not covered in the Enterprise
+! Core exam and are not directly relevant and will not be explained 
+Feature MST:
+-------------
+VTP Operating Mode                : Transparent
+
+Feature UNKNOWN: 
+-------------
+VTP Operating Mode                : Transparent

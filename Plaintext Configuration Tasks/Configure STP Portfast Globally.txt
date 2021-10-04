@@ -1,0 +1,5 @@
+SW2# configure terminal
+SW2(config)# spanning-tree portfast default 
+SW2(config)# interface <type><number> 
+SW2(config-if)# spanning-tree portfast disable
+SW2(config-if)# end

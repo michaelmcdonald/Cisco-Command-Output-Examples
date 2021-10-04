@@ -1,0 +1,10 @@
+R1# configure-terminal
+R1(config)# interface <type><number>
+R1(config-if)# ip address <address> <mask>
+R1(config-if)# standby version <1|2>
+R1(config-if)# standby <group_num> ip <virtual_ip>
+R1(config-if)# standby <group_num> priority <priority>
+R1(config-if)# standby <group_num> name <name>
+R1(config-if)# [no] standby <group_num> preempt
+R1(config-if)# end
+R1# write

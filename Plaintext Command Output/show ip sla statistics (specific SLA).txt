@@ -1,0 +1,10 @@
+R1# show ip sla statistics 1 
+IPSLAs Latest Operation Statistics
+
+IPSLA operation id: 1
+        Latest RTT: 16 milliseconds 
+Latest operation start time: 12:40:39 EST Tue Jan 5 2016
+Latest operation return code: OK 
+Number of successes: 7 
+Number of failures: 0 
+Operation time to live: Forever

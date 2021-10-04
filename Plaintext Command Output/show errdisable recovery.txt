@@ -1,0 +1,18 @@
+SW1# show errdisable recovery
+! Output omitted for brevity 
+
+ErrDisable Reason            Timer Status 
+-----------------            --------------
+arp-inspection               Disabled
+bpduguard                    Enabled
+..
+
+Recovery command: "clear     Disabled
+
+Timer interval: 300 seconds
+
+Interfaces that will be enabled at the next timeout:
+
+Interface       Errdisable reason       Time left(sec) 
+---------       -----------------       --------------
+Gi1/0/2                bpduguard          295

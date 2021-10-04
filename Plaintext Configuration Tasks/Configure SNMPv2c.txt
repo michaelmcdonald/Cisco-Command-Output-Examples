@@ -1,0 +1,7 @@
+R1# configure-terminal
+! configure the SNMP agent to send either SNMPv2c Traps (default) or Informs to specified host
+R1(config)# snmp-server host {<hostname> | <ip-address>} [informs] version 2c <notification-community-string>
+! enable the sending of all supported types of Trap and Inform messages
+R1(config)# snmp-server enable traps
+R1(config)# end
+R1# wr

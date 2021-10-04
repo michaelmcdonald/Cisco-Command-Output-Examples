@@ -1,0 +1,8 @@
+SW2# show spanning-tree root
+                                        Root    Hello Max Fwd 
+Vlan                   Root ID          Cost    Time  Age Dly  Root Port
+---------------- -------------------- --------- ----- --- ---  ------------
+VLAN0001         32769 0062.ec9d.c500         4    2   20  15  Gi1/0/1 
+VLAN0010         32778 0062.ec9d.c500         4    2   20  15  Gi1/0/1 
+VLAN0020         32788 0062.ec9d.c500         4    2   20  15  Gi1/0/1 
+VLAN0099         32867 0062.ec9d.c500         4    2   20  15  Gi1/0/1

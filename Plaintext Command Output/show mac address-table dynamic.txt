@@ -1,0 +1,26 @@
+SW1# show mac address-table dynamic
+          Mac Address Table 
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports 
+----    -----------       --------    ----
+   1    0081.c4ff.8b01    DYNAMIC     Gi1/0/2 
+   1    189c.5d11.9981    DYNAMIC     Gi1/0/3 
+   1    189c.5d11.99c7    DYNAMIC     Gi1/0/3 
+   1    7070.8bcf.f828    DYNAMIC     Gi1/0/17 
+   1    70df.2f22.b882    DYNAMIC     Gi1/0/2 
+   1    70df.2f22.b883    DYNAMIC     Gi1/0/3 
+   1    bc67.1c5c.9304    DYNAMIC     Gi1/0/2 
+   1    bc67.1c5c.9347    DYNAMIC     Gi1/0/3 
+  99    189c.5d11.9981    DYNAMIC     Gi1/0/3 
+  99    7069.5ad4.c228    DYNAMIC     Gi1/0/15 
+  10    0087.31ba.3980    DYNAMIC     Gi1/0/9 
+  10    0087.31ba.3981    DYNAMIC     Gi1/0/9 
+  10    189c.5d11.9981    DYNAMIC     Gi1/0/3 
+  10    3462.8800.6921    DYNAMIC     Gi1/0/8 
+  10    5067.ae2f.6480    DYNAMIC     Gi1/0/7 
+  10    7069.5ad4.c220    DYNAMIC     Gi1/0/13 
+  10    e8ed.f3aa.7b98    DYNAMIC     Gi1/0/12 
+  20    189c.5d11.9981    DYNAMIC     Gi1/0/3 
+  20    7069.5ad4.c221    DYNAMIC     Gi1/0/14 
+Total Mac Addresses for this criterion: 19

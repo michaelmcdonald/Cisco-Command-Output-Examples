@@ -1,0 +1,14 @@
+R1# configure-terminal
+R1(config)# ip prefix-list <filter-name> seq <seq-num> {permit|deny} <network-addr>/<cidr>
+R1(config)# router ospf <process-id>
+R1(config-router)# area <area> filter-list prefix <prefix-list> {in|out}
+R1(config-router)# end
+
+R1# configure-terminal
+R1(config)# ip prefix-list PREFIX-FILTER seq 5 deny 172.16.1.0/24 
+R1(config)# ip prefix-list PREFIX-FILTER seq 10 permit 0.0.0.0/0 le 32 !
+R1(config)# router ospf 1
+R1(config-router)# router-id 192.168.2.2 
+R1(config-router)# network 10.12.1.0 0.0.0.255 area 12 
+R1(config-router)# network 10.23.1.0 0.0.0.255 area 0
+R1(config-router)# area 0 filter-list prefix PREFIX-FILTER in

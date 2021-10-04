@@ -1,0 +1,3 @@
+SW1# configure terminal 
+SW1(config)# errdisable recovery cause bpduguard
+SW1(config)# end

@@ -1,0 +1,8 @@
+SW3# show spanning-tree interface gi1/0/1
+
+Vlan                Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- -------------------------------
+VLAN0001            Root FWD 4         128.1    P2p 
+VLAN0010            Root FWD 4         128.1    P2p 
+VLAN0020            Root FWD 4         128.1    P2p 
+VLAN0099            Root FWD 4         128.1    P2p

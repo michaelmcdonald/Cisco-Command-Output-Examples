@@ -1,0 +1,16 @@
+R1# show snmp community
+
+Community name: secretROpw 
+Community Index: secretROpw 
+Community SecurityName: secretROpw 
+storage-type: nonvolatile        active access-list: ACL_PROTECTSNMP
+
+Community name: secretRWpw 
+Community Index: secretRWpw 
+Community SecurityName: secretRWpw 
+storage-type: nonvolatile        active access-list: ACL_PROTECTSNMP
+
+Community name: secretTRAPpw 
+Community Index: secretTRAPpw
+Community SecurityName: secretTRAPpw 
+storage-type: nonvolatile        active

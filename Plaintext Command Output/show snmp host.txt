@@ -1,0 +1,6 @@
+R1# show snmp host 
+Notification host: 10.1.3.4      udp-port: 162   type: inform
+user: secretTRAPpw      security model: v2c
+
+Notification host: 10.1.3.3      udp-port: 162   type: trap
+user: secretTRAPpw      security model: v2c

@@ -1,0 +1,11 @@
+SW3# configure-terminal
+SW3(config)# interface <type><number>
+SW3(config-if)# spanning-tree cost <value>
+SW3(config-if)# end
+
+----------------------------------------
+
+SW3# configure-terminal
+SW3(config)# interface gi1/0/1
+SW3(config-if)# spanning-tree cost 1
+SW3(config-if)# end

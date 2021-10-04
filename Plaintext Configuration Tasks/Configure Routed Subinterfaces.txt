@@ -1,0 +1,20 @@
+R2# configure terminal 
+R2(config-if)# int <type><number>.<sub-int-number>
+R2(config-subif)# encapsulation dot1Q <vlan-id>
+R2(config-subif)# ip address <ipv4-address> <subnet-mask>
+R2(config-subif)# ipv6 address <ipv6-address>/<prefix-length>
+R2(config-subif)# end
+
+---------------------
+
+R2# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+R2(config-if)# int g0/0/1.10 
+R2(config-subif)# encapsulation dot1Q 10 
+R2(config-subif)# ip address 10.10.10.2 255.255.255.0 
+R2(config-subif)# ipv6 address 2001:db8:10::2/64 
+R2(config-subif)# int g0/0/1.99 
+R2(config-subif)# encapsulation dot1Q 99 
+R2(config-subif)# ip address 10.20.20.2 255.255.255.0 
+R2(config-subif)# ipv6 address 2001:db8:20::2/64
+R2(config-subif)# end

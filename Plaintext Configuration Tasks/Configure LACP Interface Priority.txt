@@ -1,0 +1,2 @@
+SW1(config)# interface <type><number>
+SW1(config-if)# lacp port-priority <value>

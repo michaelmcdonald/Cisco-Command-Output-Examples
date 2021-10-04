@@ -1,0 +1,14 @@
+R1# configure-terminal
+R1(config)# interface <type><number>
+R1(config-if)# ip address <ip-addr> <netmask> 
+R1(config-if)# ip ospf <process-id> area <area-id>
+R1(config-if)# end
+
+
+
+
+configure terminal
+interface GigabitEthernet 0/0
+ip address 10.0.0.1 255.255.255.0 
+ip ospf 1 area 0
+end

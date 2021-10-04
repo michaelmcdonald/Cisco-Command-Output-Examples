@@ -1,0 +1,11 @@
+SW1# show lacp neighbor 
+Flags:  S - Device is requesting Slow LACPDUs
+        F - Device is requesting Fast LACPDUs 
+        A - Device is in Active mode       P - Device is in Passive mode
+
+Channel group 1 neighbors
+
+                  LACP Port                        Admin  Oper   Port    Port
+Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
+Gi1/0/1   SA      32768     0081.c4ff.8b00   1s    0x0    0x1    0x102   0x3D
+Gi1/0/2   SA      32768     0081.c4ff.8b00  26s    0x0    0x1    0x103   0x3D

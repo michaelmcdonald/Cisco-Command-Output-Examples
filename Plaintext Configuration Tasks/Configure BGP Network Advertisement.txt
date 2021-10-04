@@ -1,0 +1,49 @@
+! Uses the default IPv4 address family
+
+R1# configure-terminal
+R1(config)# router bgp <local-asn>
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# neighbor <neighbor-ip-addr> remote-as <neighbor-asn>
+R1(config-router)# network <network-addr> mask <subnet-mask>
+R1(config-router)# end
+
+
+R1# configure-terminal
+R1(config)# router bgp 65100
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# neighbor 10.12.1.2 remote-as 65100
+R1(config-router)# network 10.12.1.0 mask 255.255.255.0
+R1(config-router)# network 192.168.1.1 mask 255.255.255.255
+R1(config-router)# end
+
+
+
+
+
+
+! Explicitly specify the IPv4 address family
+R1# configure-terminal
+R1(config)# router bgp <local-asn>
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# no bgp default ipv4-unicast 
+R1(config-router)# neighbor <neighbor-ip-addr> remote-as <neighbor-asn>
+R1(config-router)# address-family ipv4
+R1(config-router-af)# network <network-addr> mask <subnet-mask>
+R1(config-router-af)# neighbor <neighbor-ip-addr> activate 
+R1(config-router-af)# exit-address-family
+R1(config-router)# end
+
+
+R1# configure-terminal
+R1(config)# router bgp 65200
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# no bgp default ipv4-unicast 
+R1(config-router)# neighbor 10.12.1.1 remote-as 65100 
+R1(config-router)# address-family ipv4
+R1(config-router-af)# network 10.12.1.0 mask 255.255.255.0
+R1(config-router-af)# network 192.168.2.2 mask 255.255.255.255
+R1(config-router-af)# neighbor 10.12.1.1 activate 
+R1(config-router-af)# exit-address-family
+R1(config-router)# end
+
+

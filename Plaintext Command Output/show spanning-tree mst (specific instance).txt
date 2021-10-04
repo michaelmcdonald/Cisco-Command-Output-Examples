@@ -1,0 +1,7 @@
+SW3# show spanning-tree mst 0
+! Output omitted for brevity 
+Interface       Role Sts Cost      Prio.Nbr Type
+--------------- ---- --- --------- -------- -------------------
+Gi1/0/1         Root FWD 20000     128.1    P2p
+Gi1/0/2         Altn BLK 20000     128.2    P2p
+Gi1/0/5         Desg FWD 20000     128.5    P2p

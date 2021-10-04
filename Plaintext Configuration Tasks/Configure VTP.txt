@@ -1,0 +1,8 @@
+SW1# configure terminal
+SW1(config)# vtp domain <domain-name> 
+SW1(config)# vtp version {1 | 2 | 3}
+SW1(config)# vtp mode {server | client | transparent | none}
+SW1(config)# vtp password <password> 
+SW1(config)# exit 
+! If VTP version 3, set primary server with:
+SW1# vtp primary

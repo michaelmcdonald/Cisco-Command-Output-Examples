@@ -1,0 +1,18 @@
+R1# configure-terminal
+! Create a default route on R1
+R1(config)# ip route 0.0.0.0 0.0.0.0 <next-hop-addr>
+! Configure OSPF to enable on interfaces and 
+! advertise a default route
+R1(config)# router ospf <process-id>
+R1(config-router)# network <network-addr> <wildcard-mask> area <area-id> default-information originate
+R1(config-router)# end
+
+
+R1# configure-terminal
+! Create a default route on R1
+R1(config)# ip route 0.0.0.0 0.0.0.0 100.64.1.2 !
+! Configure OSPF to enable on interfaces and 
+! advertise a default route
+R1(config)# router ospf 1
+R1(config-router)# network 10.0.0.0 0.255.255.255 area 0 default-information originate
+R1(config-router)# end

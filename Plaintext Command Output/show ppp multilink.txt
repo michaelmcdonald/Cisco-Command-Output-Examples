@@ -1,0 +1,18 @@
+R1# show ppp multilink
+
+Multilink1
+  Bundle name: R2 
+  Remote Username: R2 
+  Remote Endpoint Discriminator: [1] R2 
+  Local Username: R1 
+  Local Endpoint Discriminator: [1] R1 
+  Bundle up for 16:50:33, total bandwidth 3088, load 1/255 
+  Receive buffer limit 24000 bytes, frag timeout 1000 ms
+    0/0 fragments/bytes in reassembly list
+    0 lost fragments, 96 reordered
+    0/0 discarded fragments/bytes, 0 lost received
+    0x654D7 received sequence, 0x654D5 sent sequence
+  Member links: 2 active, 0 inactive (max 255, min not set)
+    Se0/1/1, since 16:50:33 
+    Se0/0/0, since 16:23:16 
+No inactive multilink interfaces

@@ -1,0 +1,15 @@
+R1# configure-terminal
+R1(config)# router ospf <process-id>
+R1(config-router)# network <network-addr> <wildcard-mask> area <area-id> 
+R1(config-router)# end
+
+
+
+
+R1# configure-terminal
+R1(config)# router ospf 1
+R1(config-router)# network 10.0.0.0 0.0.0.255 area 0 
+R1(config-router)# network 10.0.10.0 0.0.0.255 area 0 
+R1(config-router)# network 192.0.0.0 0.0.0.255 area 0 
+R1(config-router)#network 192.10.0.0 0.0.0.255 area 0
+R1(config-router)# end

@@ -1,0 +1,5 @@
+R3# show ospfv3 interface brief 
+Interface    PID   Area           AF         Cost  State Nbrs F/C
+Lo0          1     0              ipv6       1     LOOP  0/0
+Gi0/2        1     0              ipv6       1     BDR   1/1
+Gi0/4        1     34             ipv6       1     DR    1/1

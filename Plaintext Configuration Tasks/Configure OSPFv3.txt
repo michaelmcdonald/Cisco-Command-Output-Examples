@@ -1,0 +1,9 @@
+R1# configure-terminal
+R1(config)# ipv6 unicast-routing
+R1(config-router)# router ospfv3 <process-id>
+R1(config-router)# router-id <router-id>
+R1(config-router)# address-family {ipv6 | ipv4} unicast
+R1(config-router)# exit
+R1(config)# interface <type><number>
+R1(config-if)# ospfv3 <process-id> ipv6 area <area-id>
+R1(config-if)# end

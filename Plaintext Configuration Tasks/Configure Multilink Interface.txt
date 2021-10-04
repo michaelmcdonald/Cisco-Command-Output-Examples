@@ -1,0 +1,16 @@
+R1# configure-terminal
+R1(config)# interface multilink <number>
+R1(config-if)# encapsulation ppp
+R1(config-if)# ppp multilink
+R1(config-if)# ip address <address> <mask>
+R1(config-if)# ppp mulltilink group <number
+R1(config-if)# exit
+R1(config)# interface <serial-number>
+R1(config-if)# encapsulation ppp
+R1(config-if)# ppp multilink
+R1(config-if)# no ip address
+R1(config-if)# ppp multilink group <number>
+! any authentication data
+R1(config)# end
+R1# wr
+! REPEAT ON R2

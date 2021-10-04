@@ -1,0 +1,20 @@
+SW1# configure terminal 
+SW1(config)# interface Vlan <vlan-number>
+SW1(config-if)# ip address <ipv4-address> <subnet-mask>
+SW1(config-if)# ipv6 address <ipv6-address>/<prefix-length>
+SW1(config-if)# no shutdown 
+SW1(config-if)# end
+
+--------------------------------------------------------------------------------
+
+SW1# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+SW1(config)# interface Vlan 10 
+SW1(config-if)# ip address 10.10.10.1 255.255.255.0 
+SW1(config-if)# ipv6 address 2001:db8:10::1/64 
+SW1(config-if)# no shutdown 
+SW1(config-if)# interface vlan 99 
+SW1(config-if)# ip address 10.99.99.1 255.255.255.0 
+SW1(config-if)# ipv6 address 2001:db8:99::1/64 
+SW1(config-if)# no shutdown
+SW1(config-if)# end

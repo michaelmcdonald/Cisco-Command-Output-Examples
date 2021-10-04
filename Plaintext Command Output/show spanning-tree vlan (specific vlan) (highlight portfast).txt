@@ -1,0 +1,9 @@
+SW1# show spanning-tree vlan 10
+! Output omitted for brevity 
+
+VLAN0010 
+Interface           Role Sts Cost      Prio.Nbr Type 
+------------------- ---- --- --------- -------- -------------------------------
+Gi1/0/2             Desg FWD 4         128.2    P2p 
+Gi1/0/3             Desg FWD 4         128.3    P2p 
+Gi1/0/13            Desg FWD 4         128.13   P2p Edge

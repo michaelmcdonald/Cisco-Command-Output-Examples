@@ -1,0 +1,25 @@
+SW2# show spanning-tree summary
+Switch is in pvst mode
+Root bridge for: Admin
+Extended system ID           is enabled
+Portfast Default             is disabled
+PortFast BPDU Guard Default  is disabled
+Portfast BPDU Filter Default is disabled
+Loopguard Default            is disabled
+EtherChannel misconfig guard is disabled
+UplinkFast                   is disabled
+BackboneFast                 is disabled
+Configured Pathcost method used is short
+ 
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0001                     0         0        0          7          7
+VLAN0010                     0         0        0          6          6
+VLAN0020                     0         0        0          6          6
+VLAN0030                     0         0        0          6          6
+VLAN0040                     0         0        0          6          6
+VLAN0050                     0         0        0          6          6
+VLAN0060                     0         0        0          6          6
+ 
+---------------------- -------- --------- -------- ---------- ----------
+7 vlans                      0         0        0         43         43

@@ -1,0 +1,26 @@
+SW1# show interfaces trunk
+
+! Section 1 displays the native VLAN associated on this port, the status and
+! if the port is associated to a EtherChannel
+
+Port        Mode             Encapsulation  Status        Native vlan
+Gi1/0/2     on               802.1q         trunking      1
+Gi1/0/3     on               802.1q         trunking      1
+
+! Section 2 displays all of the VLANs that are allowed to be transmitted across
+! the trunk ports
+
+Port        Vlans allowed on trunk
+Gi1/0/2     1-4094
+Gi1/0/3     1-4094
+
+Port        Vlans allowed and active in management domain
+Gi1/0/2     1,10,20,99
+Gi1/0/3     1,10,20,99
+
+! Section 3 displays all of the VLANs that are allowed across the trunk and are
+! in a spanning tree forwarding state
+
+Port        Vlans in spanning tree forwarding state and not pruned
+Gi1/0/2     1,10,20,99
+Gi1/0/3     1,10,20,99

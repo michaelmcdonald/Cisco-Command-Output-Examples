@@ -1,0 +1,13 @@
+R3# configure terminal 
+Enter configuration commands, one per line. 
+R3(config)# router ospfv3 <process-id>
+R3(config-router)# address-family {ipv4 | ipv6} unicast 
+R3(config-router-af)# area <area-id> range <prefix>/<prefix-length>
+
+
+
+R3# configure terminal 
+Enter configuration commands, one per line. 
+R3(config)# router ospfv3 1 
+R3(config-router)# address-family ipv6 unicast 
+R3(config-router-af)# area 0 range 2001:db8:0:0::/65

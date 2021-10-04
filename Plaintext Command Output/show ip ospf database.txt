@@ -1,0 +1,31 @@
+R4# show ip ospf database
+
+            OSPF Router with ID (4.4.4.4) (Process ID 1)
+
+                Router Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+1.1.1.1         1.1.1.1         291         0x8000000B 0x00966C 2
+4.4.4.4         4.4.4.4         1993        0x80000007 0x001C4E 1
+
+                Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+172.16.14.2     4.4.4.4         1993        0x80000006 0x0091B5
+
+                Summary Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+172.16.12.0     1.1.1.1         291         0x80000007 0x00C567
+172.16.13.0     1.1.1.1         291         0x80000007 0x009CC5
+192.168.2.0     1.1.1.1         1031        0x80000002 0x002E5D
+
+                Summary ASB Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+3.3.3.3         1.1.1.1         1031        0x80000002 0x0035EB
+
+                Type-5 AS External Link States
+
+Link ID         ADV Router      Age        Seq#        Checksum  Tag
+10.0.0.0          3.3.3.3       977        0x80000002  0x000980    0

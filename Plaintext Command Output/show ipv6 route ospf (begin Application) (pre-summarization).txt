@@ -1,0 +1,15 @@
+R4# show ipv6 route ospf | begin Application 
+       lA - LISP away, a - Application 
+
+OI  2001:DB8::1/128 [110/3]
+     via FE80::3, GigabitEthernet0/3
+OI  2001:DB8::2/128 [110/2]
+     via FE80::3, GigabitEthernet0/3
+OI  2001:DB8::3/128 [110/1]
+     via FE80::3, GigabitEthernet0/3
+OI  2001:DB8:0:1::/64 [110/4]
+     via FE80::3, GigabitEthernet0/3
+OI  2001:DB8:0:12::/64 [110/3]
+     via FE80::3, GigabitEthernet0/3
+OI  2001:DB8:0:23::/64 [110/2]
+     via FE80::3, GigabitEthernet0/3

@@ -1,0 +1,36 @@
+CONFIGURE SERIAL INTERFACE (PPP)
+
+R1# configure-terminal
+R1(config)# interface serial <number>
+R1(config-if)# ip address <address> <mask>
+! optional
+R1(config-if)# encapsulation ppp
+R1(config-if)# no shutdown
+! verify device has DCE cable, if so apply clock rate
+R1(config-if)# show controllers serial <number>
+R1(config-if)# clock rate <speed-in-bps>
+! set appropriate interface bandwidth
+R1(config-if)# bandwidth <speed-in-kpbs>
+R1(config-if)# description <description>
+R1(config-if)# end
+R1# wr
+
+
+--------------------------------------------------------------------------------
+
+
+Step 1. Use the ip address address mask command in interface configuration mode to configure the interface IP address.
+
+Step 2. The following tasks are required only when the specifically listed conditions are true:
+
+A. If an encapsulation protocol interface subcommand already exists, for a non-PPP protocol, use the encapsulation ppp command in interface configuration mode to enable PPP. Alternatively, use the no encapsulation protocol command in interface configuration mode to use the default setting of PPP as the data link protocol.
+
+B. If the interface line status is administratively down, use the no shutdown command in interface configuration mode to enable the interface.
+
+C. If the serial link is a back-to-back serial link in a lab (or a simulator), use the clock rate speed command in interface configuration mode to configure the clocking rate. Use this command only on the one router with the DCE cable (per the show controllers serial number command).
+
+Step 3. The following steps are always optional and have no impact on whether the link works and passes IP traffic:
+
+A. Use the bandwidth speed-in-kbps command in interface configuration mode to configure the link’s documented speed so that it matches the actual clock rate of the link.
+
+B. For documentation purposes, use the description text command in interface configuration mode to configure a description of the purpose of the interface.

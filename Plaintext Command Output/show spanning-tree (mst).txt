@@ -1,0 +1,52 @@
+SW1# show spanning-tree
+! Output omitted for brevity
+! Spanning Tree information for Instance 0 (All VLANs but 10,20, and 99) 
+MST0 
+  Spanning tree enabled protocol mstp
+  Root ID    Priority    24576 
+             Address     0062.ec9d.c500 
+             This bridge is the root 
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    24576 (priority 0 sys-id-ext 0)
+             Address     0062.ec9d.c500
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type 
+------------------- ---- --- --------- -------- -------------------------------
+Gi1/0/2             Desg FWD 20000     128.2    P2p 
+Gi1/0/3             Desg FWD 20000     128.3    P2p
+
+! Spanning Tree information for Instance 1 (VLANs 10 and 20) 
+MST1 
+  Spanning tree enabled protocol mstp
+  Root ID    Priority    24577 
+             Address     0062.ec9d.c500 
+             This bridge is the root 
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    24577 (priority 24576 sys-id-ext 1)
+             Address     0062.ec9d.c500
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type 
+------------------- ---- --- --------- -------- -------------------------------
+Gi1/0/2             Desg FWD 20000     128.2    P2p 
+Gi1/0/3             Desg FWD 20000     128.3    P2p
+
+! Spanning Tree information for Instance 0 (VLAN 30)
+MST2
+  Spanning tree enabled protocol mstp
+  Root ID    Priority    24578 
+             Address     0062.ec9d.c500 
+             This bridge is the root 
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    24578 (priority 24576 sys-id-ext 2)
+             Address     0062.ec9d.c500
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type 
+------------------- ---- --- --------- -------- -------------------------------
+Gi1/0/2             Desg FWD 20000     128.2    P2p 
+Gi1/0/3             Desg FWD 20000     128.3    P2p

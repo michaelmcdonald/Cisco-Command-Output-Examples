@@ -1,0 +1,18 @@
+R1# show ipv6 route
+! Output omitted for brevity
+IPv6 Routing Table - default - 6 entries 
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP 
+       H - NHRP, I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea 
+       IS - ISIS summary, D - EIGRP, EX - EIGRP external, NM - NEMO 
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect 
+       RL - RPL, O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1 
+       OE2 - OSPF ext 2, ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+       la - LISP alt, lr - LISP site-registrations, ld - LISP dyn-eid 
+       lA - LISP away, a - Application 
+C   2001:DB8:11::/64 [0/0] 
+     via GigabitEthernet0/2, directly connected 
+C   2001:DB8:12::/64 [0/0] 
+     via GigabitEthernet0/1, directly connected
+S   2001:DB8:22::/64 [1/0]
+     via 2001:DB8:12::2

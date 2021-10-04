@@ -1,0 +1,22 @@
+R1# configure terminal 
+R1(config)# interface <type><number>
+! add primary IPv4 address to interface
+R1(config-if)# ip address <ip-address> <subnet-mask>
+! add secondary IPv4 address to interface
+R1(config-if)# ip address <ip-address> <subnet-mask> secondary
+R1(config-if)# end
+
+--------------------------------------------------------------------------------
+
+R1# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+R1(config)# interface gi0/0/0 
+R1(config-if)# ip address 10.10.10.254 255.255 
+R1(config-if)# ip address 172.16.10.254 255.255.255.0 secondary 
+R1(config-if)# ipv6 address 2001:db8:10::254/64 
+R1(config-if)# ipv6 address 2001:DB8:10:172::254/64 
+R1(config-if)# interface gi0/0/1 
+R1(config-if)# ip address 10.20.20.254 255.255.255.0 
+R1(config-if)# ip address 172.16.20.254 255.255.255.0 secondary 
+R1(config-if)# ipv6 address 2001:db8:20::254/64 
+R1(config-if)# ipv6 address 2001:db8:20:172::254/64

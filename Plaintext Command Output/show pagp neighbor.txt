@@ -1,0 +1,10 @@
+SW1# show pagp neighbor 
+Flags:  S - Device is sending Slow hello. C - Device is in Consistent state.
+        A - Device is in Auto mode. P - Device learns on physical port.
+
+Channel group 2 neighbors
+
+          Partner              Partner          Partner         Partner Group
+Port      Name                 Device ID        Port       Age  Flags   Cap.
+Gi1/0/3   SW2                  0081.c4ff.8b00   Gi1/0/3     11s SC      20001
+Gi1/0/4   SW2                  0081.c4ff.8b00   Gi1/0/4      5s SC      200

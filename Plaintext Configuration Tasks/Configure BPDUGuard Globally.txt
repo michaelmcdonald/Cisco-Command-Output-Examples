@@ -1,0 +1,5 @@
+SW1# configure terminal 
+SW1(config)# spanning-tree portfast bpduguard default 
+SW1(config)# interface <type><number>
+SW1(config-if)# spanning-tree bpduguard disable
+SW1(config-if)# end

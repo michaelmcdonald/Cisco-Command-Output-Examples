@@ -1,0 +1,10 @@
+SW2# show spanning-tree inconsistentports
+
+Name                 Interface                Inconsistency 
+-------------------- ------------------------ -----------------
+VLAN0001             GigabitEthernet1/0/1     Loop Inconsistent 
+VLAN0010             GigabitEthernet1/0/1     Loop Inconsistent 
+VLAN0020             GigabitEthernet1/0/1     Loop Inconsistent 
+VLAN0099             GigabitEthernet1/0/1     Loop Inconsistent
+
+Number of inconsistent ports (segments) in the system : 4

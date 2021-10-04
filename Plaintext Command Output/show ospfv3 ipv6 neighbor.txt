@@ -1,0 +1,7 @@
+R3# show ospfv3 ipv6 neighbor
+
+          OSPFv3 1 address-family ipv6 (router-id 192.168.3.3)
+
+Neighbor ID  Pri   State       Dead Time   Interface ID    Interface
+192.168.2.2   1   FULL/DR      00:00:32    5               GigabitEthernet0/2
+192.168.4.4   1   FULL/BDR     00:00:33    5               GigabitEthernet0/4

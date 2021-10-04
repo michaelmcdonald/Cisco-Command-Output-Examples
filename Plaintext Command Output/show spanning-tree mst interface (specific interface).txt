@@ -1,0 +1,13 @@
+SW2# show spanning-tree mst interface gigabitEthernet 1/0/1
+
+GigabitEthernet1/0/1 of MST0 is root forwarding 
+Edge port: no             (default)        port guard : none 
+Link type: point-to-point (auto)           bpdu filter: disable 
+Boundary : internal                        bpdu guard : disable 
+Bpdus sent 17, received 217
+
+Instance Role Sts Cost      Prio.Nbr Vlans mapped 
+-------- ---- --- --------- -------- ------------------------------
+0        Root FWD 20000     128.1    1-9,11-19,21-98,100-4094 
+1        Root FWD 20000     128.1    10,20 
+2        Root FWD 20000     128.1    99

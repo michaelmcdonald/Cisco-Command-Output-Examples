@@ -1,0 +1,14 @@
+R2# debug ipv6 ospf adj 
+R2# 
+Jan 15 14:50:58.098: OSPFv3-2-IPv6 ADJ   Gi0/0: Added 3.3.3.3 to nbr list
+Jan 15 14:50:58.098: OSPFv3-2-IPv6 ADJ   Gi0/0: 2 Way Communication to 3.3.3.3, state 2WAY 
+Jan 15 14:50:58.098: OSPFv3-2-IPv6 ADJ   Gi0/0: DR: 3.3.3.3 (Id) BDR: 2.2.2.2 (Id)
+Jan 15 14:50:58.098: OSPFv3-2-IPv6 ADJ   Gi0/0: Nbr 3.3.3.3: Prepare dbase exchange 
+Jan 15 14:50:58.098: OSPFv3-2-IPv6 ADJ   Gi0/0: Send DBD to 3.3.3.3 seq 0x2AC5B307 opt 0x0013 flag 0x7 len 28 
+Jan 15 14:50:58.102: OSPFv3-2-IPv6 ADJ   Gi0/0: Rcv DBD from 3.3.3.3 seq 0xBD091ED opt 0x0013 flag 0x7 len 28 mtu 1500 state EXSTART 
+Jan 15 14:50:58.102: OSPFv3-2-IPv6 ADJ   Gi0/0: NBR Negotiation Done. We are the SLAVE 
+Jan 15 14:50:58.102: OSPFv3-2-IPv6 ADJ   Gi0/0: Nbr 3.3.3.3: Summary list built, size 14 
+Jan 15 14:50:58.106: OSPFv3-2-IPv6 ADJ   Gi0/0: Rcv DBD from 3.3.3.3 seq 0xBD091EE opt 0x0013 flag 0x1 len 308 mtu 1500 state EXCHANGE 
+Jan 15 14:50:58.106: OSPFv3-2-IPv6 ADJ   Gi0/0: Exchange Done with 3.3.3.3 
+Jan 15 14:50:58.106: OSPFv3-2-IPv6 ADJ   Gi0/0: Synchronized with 3.3.3.3, state FULL 
+Jan 15 14:50:58.106: %OSPFv3-5-ADJCHG: Process 2, Nbr 3.3.3.3 on GigabitEthernet0/0 from LOADING to FULL, Loading Done

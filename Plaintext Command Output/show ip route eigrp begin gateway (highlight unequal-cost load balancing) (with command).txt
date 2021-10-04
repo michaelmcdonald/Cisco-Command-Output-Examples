@@ -1,0 +1,6 @@
+R1# show ip route eigrp | begin Gateway 
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 10 subnets, 2 masks
+D        10.4.4.0/24 [90/5376] via 10.14.1.4, 00:00:03, GigabitEthernet0/2 
+                     [90/3328] via 10.13.1.3, 00:00:03, GigabitEthernet0/1

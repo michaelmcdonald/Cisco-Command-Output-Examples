@@ -1,0 +1,14 @@
+R2# show ip nat statistics
+Total active translations: 0 (0 static, 0 dynamic; 0 extended)
+Outside interfaces:
+  FastEthernet1/0
+Inside interfaces:
+  FastEthernet0/0
+Hits: 27 Misses: 3
+CEF Translated packets: 30, CEF Punted packets: 0
+Expired translations: 3
+Dynamic mappings:
+— Inside Source
+[Id: 1] access-list 25 interface FastEthernet1/0 refcount 0
+
+Queued Packets: 0

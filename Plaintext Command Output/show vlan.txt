@@ -1,0 +1,54 @@
+SW1# show vlan
+
+!  Traditional and common VLANs will be listed in this section. The ports
+!  associated to these VLANs are displayed to the right.
+
+VLAN Name                             Status    Ports 
+---- -------------------------------- --------- ------------------------------
+1    default                          active    Gi1/0/1, Gi1/0/2, Gi1/0/3
+                                                Gi1/0/4, Gi1/0/5, Gi1/0/6
+                                                Gi1/0/10, Gi1/0/11, Gi1/0/17
+                                                Gi1/0/18, Gi1/0/19, Gi1/0/20
+                                                Gi1/0/21, Gi1/0/22, Gi1/0/23
+                                                Gi1/1/1, Gi1/1/2, Te1/1/3
+                                                Te1/1/4
+10   PCs                              active    Gi1/0/7, Gi1/0/8, Gi1/0/9
+                                                Gi1/0/12, Gi1/0/13
+
+20   Phones                           active    Gi1/0/14
+99   Guest                            active    Gi1/0/15, Gi1/0/16
+1002 fddi-default                     act/unsup
+1003 token-ring-default               act/unsup
+1004 fddinet-default                  act/unsup
+1005 trnet-default                    act/unsup
+
+!  This section displays the system wide MTU setting for all 1Gbps and faster
+!  interface
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2 
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2 
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0 
+10   enet  100010     1500  -      -      -        -    -        0      0 
+20   enet  100020     1500  -      -      -        -    -        0      0 
+99   enet  100099     1500  -      -      -        -    -        0      0 
+1002 fddi  101002     1500  -      -      -        -    -        0      0 
+1003 tr    101003     1500  -      -      -        -    -        0      0 
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0 
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0
+
+!  If a Remote SPAN VLAN is configured, it will be displayed in this section.
+!  Remote SPAN VLANs are explained in Chapter 24 
+
+Remote SPAN VLANs 
+------------------------------------------------------------------------------
+
+!  If Private VLANs are configured, they will be displayed in this section.
+!  Private VLANs are outside of the scope of this book, but more information
+!  can be found at http://www.cisco.com 
+
+Primary Secondary Type              Ports 
+------- --------- ----------------- ------------------------------------------

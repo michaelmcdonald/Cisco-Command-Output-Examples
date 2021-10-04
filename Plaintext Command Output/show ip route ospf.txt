@@ -1,0 +1,18 @@
+R1# show ip route ospf
+! Output omitted for brevity
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP 
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2 
+       E1 - OSPF external type 1, E2 - OSPF external type 2 
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 7 subnets, 2 masks
+O        10.2.2.0/24 [110/2] via 10.123.4.2, 00:35:03, GigabitEthernet0/1
+O        10.3.3.0/24 [110/2] via 10.123.4.3, 00:35:03, GigabitEthernet0/1
+O        10.4.4.0/24 [110/2] via 10.123.4.4, 00:35:03, GigabitEthernet0/1
+      192.168.2.0/32 is subnetted, 1 subnets
+O        192.168.2.2 [110/2] via 10.123.4.2, 00:35:03, GigabitEthernet0/1
+      192.168.3.0/32 is subnetted, 1 subnets
+O        192.168.3.3 [110/2] via 10.123.4.3, 00:35:03, GigabitEthernet0/1
+      192.168.4.0/32 is subnetted, 1 subnets
+O        192.168.4.4 [110/2] via 10.123.4.4, 00:35:03, GigabitEthernet0/1

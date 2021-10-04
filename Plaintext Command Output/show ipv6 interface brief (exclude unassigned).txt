@@ -1,0 +1,10 @@
+SW1# show ipv6 interface brief | exclude unassigned|GigabitEthernet 
+Vlan1                  [up/up]
+    FE80::262:ECFF:FE9D:C547 
+    2001:1::1 
+Vlan10                 [up/up] 
+    FE80::262:ECFF:FE9D:C546 
+    2001:DB8:10::1 
+Vlan99                 [up/up] 
+    FE80::262:ECFF:FE9D:C55D 
+    2001:DB8:99::1

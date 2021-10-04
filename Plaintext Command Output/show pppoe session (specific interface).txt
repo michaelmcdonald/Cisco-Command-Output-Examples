@@ -1,0 +1,7 @@
+R1# show pppoe session interface g0/1
+  1 client session
+
+Uniq ID  PPPoE  RemMAC          Port                   VT  VA        State
+           SID  LocMAC                                     VA-st     Type
+    N/A     35  0200.0000.0022  Gi0/1                  D12 Vi1       Up
+                0200.0000.0011                                       Up

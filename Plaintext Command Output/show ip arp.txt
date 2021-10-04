@@ -1,0 +1,9 @@
+SW1# show ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.21.12.1              -   a44c.115d.b3ff  ARPA   Vlan10
+Internet  10.21.12.5              1   ac1f.6b20.30cb  ARPA   Vlan10 pv 100
+Internet  10.21.12.4              7   ac1f.6b20.3361  ARPA   Vlan10 pv 100
+Internet  10.20.67.149            -   a44c.115d.b3ff  ARPA   TenGigabitEthernet1/49
+Internet  10.20.67.148           13   0057.d20b.14c1  ARPA   TenGigabitEthernet1/49
+Internet  10.20.67.151            -   a44c.115d.b3ff  ARPA   TenGigabitEthernet1/50
+Internet  10.20.67.150            7   0057.d20a.f6c1  ARPA   TenGigabitEthernet1/50

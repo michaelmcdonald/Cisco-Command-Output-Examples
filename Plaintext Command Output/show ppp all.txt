@@ -1,0 +1,4 @@
+R1# show ppp all 
+Interface/ID OPEN+ Nego* Fail-     Stage    Peer Address    Peer Name 
+------------ --------------------- -------- --------------- -------------------
+Se0/0/0      LCP+ CHAP+ IPCP+ CDP> LocalT   192.168.2.2     R2

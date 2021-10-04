@@ -1,0 +1,14 @@
+R1# configure-terminal
+! create ACL to limit access (technically optional)
+R1(config)# ip access-list standard <name>
+R1(config-std-nacl)# permit host <ip-address>
+R1(config-std-nacl)# exit
+! configure the RO community
+R1(config)# snmp-server community <communitystring> RO [ipv6 <acl-name>] [<acl-name>]
+! optional - configure the RW community
+R1(config)# snmp-server community <communitystring> RW [ipv6 <acl-name>] [<acl-name>]
+! optional - additonal commands
+R1(config)# snmp-server location <text-describing-location>
+R1(config)# snmp-server contact <contact-name>
+R1(config)# end
+R1# wr

@@ -1,0 +1,32 @@
+SW1# show spanning-tree mst
+! Output omitted for brevity
+
+##### MST0    vlans mapped:   1-9,11-19,21-98,100-4094
+Bridge        address 0062.ec9d.c500  priority      0     (0 sysid 0)
+Root          this switch for the CIST
+Operational   hello time 2 , forward delay 15, max age 20, txholdcount 6
+Configured    hello time 2 , forward delay 15, max age 20, max hops    20
+
+Interface                        Role Sts Cost      Prio.Nbr Type
+----------------                 ---- --- --------- -------- -----------------------
+Gi1/0/2                          Desg FWD 20000     128.2    P2p
+Gi1/0/3                          Desg FWD 20000     128.3    P2p
+
+
+##### MST1    vlans mapped:   10,20
+Bridge        address 0062.ec9d.c500  priority    24577 (24576 sysid 1)
+Root          this switch for MST1
+
+Interface                        Role Sts Cost      Prio.Nbr Type
+----------------                 ---- --- --------- -------- -----------------------
+Gi1/0/2                          Desg FWD 20000     128.2    P2p
+Gi1/0/3                          Desg FWD 20000     128.3    P2p
+
+##### MST1    vlans mapped:   99
+Bridge        address 0062.ec9d.c500  priority    24578 (24576 sysid 2)
+Root          this switch for MST2
+
+Interface                        Role Sts Cost      Prio.Nbr Type
+----------------                 ---- --- --------- -------- -----------------------
+Gi1/0/2                          Desg FWD 20000     128.2    P2p
+Gi1/0/3                          Desg FWD 20000     128.3    P2p

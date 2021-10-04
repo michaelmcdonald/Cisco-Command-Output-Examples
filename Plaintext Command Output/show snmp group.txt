@@ -1,0 +1,13 @@
+R3# show snmp group
+groupname: BookGroup1                       security model:v3 noauth
+contextname: <no context specified>         storage-type: nonvolatile
+readview : v1default                        writeview: v1default
+notifyview: <no notifyview specified> 
+row status: active      access-list: ACL_PROTECTSNMP
+
+groupname: BookGroup2                       security model:v3 auth
+contextname: <no context specified>         storage-type: nonvolatile
+readview : v1default                        writeview: <no writeview specified>
+notifyview: <no notifyview specified> 
+row status: active 
+! Lines omitted for brevity

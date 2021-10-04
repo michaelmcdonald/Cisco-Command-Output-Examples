@@ -1,0 +1,6 @@
+01:02:08.122: %PM-4-ERR_RECOVER: Attempting to recover from bpduguard err-disable
+   state on Gi1/0/2 
+01:02:10.699: %SPANTREE-2-BLOCK_BPDUGUARD: Received BPDU on port Gigabit 
+   Ethernet1/0/2 with BPDU Guard enabled. Disabling port.
+01:02:10.699: %PM-4-ERR_DISABLE: bpduguard error detected on Gi1/0/2, putting 
+   Gi1/0/2 in err-disable state

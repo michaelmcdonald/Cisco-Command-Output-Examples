@@ -1,0 +1,22 @@
+LAYER 3 PORT-CHANNEL:
+
+R1# configure-terminal
+R1(config)# interface <type><number>
+R1(config-if)# channel-group <number> mode [{active | passive} | {auto | desireable} | on]
+R1(config-if)# no switchport
+R1(config-if)# exit
+R1(config)# interface port-channel <number>
+R1(config-if)# no switchport
+R1(config-if)# ip address <address> <mask>
+R1(config-if)# end
+
+
+
+LAYER 2 PORT-CHANNEL
+
+SW1# configure terminal 
+SW1(config)# interface range <type><number>-<end-number> 
+SW1(config-if-range)# channel-group <number> mode [{active | passive} | {auto | desireable} | on]
+SW1(config-if-range)# interface port-channel <number> 
+SW1(config-if)# switchport mode {trunk | access}
+SW1(config-if)# end

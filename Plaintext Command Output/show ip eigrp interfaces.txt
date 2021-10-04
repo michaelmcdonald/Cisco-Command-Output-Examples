@@ -1,0 +1,7 @@
+R1# show ip eigrp interfaces 
+EIGRP-IPv4 Interfaces for AS(1) 
+                 Xmit Queue  PeerQ        Mean Pacing Time  Multicast  Pending
+Interface Peers  Un/Reliable Un/Reliable  SRTT Un/Reliable  Flow Timer Routes
+Gi0/0       0        0/0      0/0           0     0/0           0         0
+Se0/0/0     1        0/0      0/0           2     0/16         50         0
+Se0/0/1     1        0/0      0/0           1     0/15         50         0

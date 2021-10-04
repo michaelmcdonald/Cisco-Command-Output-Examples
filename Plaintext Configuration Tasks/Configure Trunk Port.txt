@@ -1,0 +1,15 @@
+SW1# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+SW1(config)# interface <type><number>
+SW1(config-if)# switchport mode trunk 
+SW1(config-if)# end
+
+--------------------------------------------------------------------------------
+
+SW1# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+SW1(config)# interface gi1/0/2 
+SW1(config-if)# switchport mode trunk 
+SW1(config-if)# interface gi1/0/3 
+SW1(config-if)# switchport mode trunk
+SW1(config-if)# end

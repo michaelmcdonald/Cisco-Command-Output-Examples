@@ -1,0 +1,29 @@
+SW1# show interface status
+
+Port      Name              Status       Vlan       Duplex  Speed Type
+Gi1/0/1                     notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/2   SW-2 Gi1/0/1      connected    trunk      a-full a-1000 10/100/1000BaseTX 
+Gi1/0/3   SW-3 Gi1/0/1      connected    trunk      a-full a-1000 10/100/1000BaseTX 
+Gi1/0/4                     notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/5                     notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/6                     notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/7   Cube13.C          connected    10         a-full a-1000 10/100/1000BaseTX 
+Gi1/0/8   Cube11.F          connected    10         a-full a-1000 10/100/1000BaseTX 
+Gi1/0/9   Cube10.A          connected    10         a-full  a-100 10/100/1000BaseTX 
+Gi1/0/10                    notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/11                    notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/12  Cube14.D Phone    connected    10         a-full a-1000 10/100/1000BaseTX 
+Gi1/0/13  R1-G0/0/0         connected    10         a-full a-1000 10/100/1000BaseTX 
+Gi1/0/14  R2-G0/0/1         connected    20         a-full a-1000 10/100/1000BaseTX 
+Gi1/0/15  R3-G0/1/0         connected    99         a-full a-1000 10/100/1000BaseTX 
+Gi1/0/16  R4-G0/1/1         connected    99         a-full a-1000 10/100/1000BaseTX 
+Gi1/0/17                    connected    1          a-full a-1000 10/100/1000BaseTX 
+Gi1/0/18                    notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/19                    notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/20                    notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/21                    notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/22                    notconnect   1            auto   auto 10/100/1000BaseTX 
+Gi1/0/23                    notconnect   routed       auto   auto 10/100/1000BaseTX 
+Gi1/0/24                    disabled     4011         auto   auto 10/100/1000BaseTX 
+Te1/1/1                     notconnect   1            full    10G SFP-10GBase-SR 
+Te1/1/2                     notconnect   1            auto   auto unknown

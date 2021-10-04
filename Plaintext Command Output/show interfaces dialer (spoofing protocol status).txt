@@ -1,0 +1,2 @@
+R1# show interfaces dialer 2 | include line
+Dialer2 is up (spoofing), line protocol is up (spoofing)

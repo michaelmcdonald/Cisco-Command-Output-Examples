@@ -1,0 +1,17 @@
+SW3# show spanning-tree vlan 1
+! Output omitted for brevity 
+VLAN0001
+  Root ID    Priority    32769 
+             Address     0062.ec9d.c500
+             Cost        1
+             Port        1 (GigabitEthernet1/0/1)
+
+  Bridge ID  Priority    32769 (priority 32768 sys-id-ext 1)
+             Address     189c.5d11.9980
+..
+
+Interface           Role Sts Cost      Prio.Nbr Type 
+------------------- ---- --- --------- -------- -------------------------------
+Gi1/0/1             Root FWD 1         128.1    P2p 
+Gi1/0/2             Desg FWD 4         128.2    P2p 
+Gi1/0/5             Desg FWD 4         128.5    P2p

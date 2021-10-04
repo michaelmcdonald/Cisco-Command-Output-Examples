@@ -1,0 +1,10 @@
+SW1# show interfaces port-channel 1 
+Port-channel1 is up, line protocol is up (connected)
+  Hardware is EtherChannel, address is 0062.ec9d.c501 (bia 0062.ec9d.c501) 
+  MTU 1500 bytes, BW 2000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255 
+Encapsulation ARPA, loopback not set 
+Keepalive set (10 sec) 
+Full-duplex, 1000Mb/s, link type is auto, media type is 
+input flow-control is off, output flow-control is unsupported 
+Members in this channel: Gi1/0/1 Gi1/0/2

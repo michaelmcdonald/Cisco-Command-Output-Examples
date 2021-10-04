@@ -1,0 +1,21 @@
+SW3# show spanning-tree vlan 1           
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    24577
+             Address     0011.bb0b.3600
+             Cost        19
+             Port        13 (FastEthernet0/13)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32769  (priority 32768 sys-id-ext 1)
+             Address     000f.34ca.1000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time 15 
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+E0/13               Root FWD 19        128.13   P2p 
+Fa0/14              Altn BLK 19        128.14   P2p 
+Fa0/16              Desg FWD 19        128.16   P2p 
+Fa0/17              Desg FWD 19        128.17   P2p

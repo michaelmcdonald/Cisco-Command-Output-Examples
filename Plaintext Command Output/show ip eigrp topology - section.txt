@@ -1,0 +1,4 @@
+R1# show ip eigrp topology | section 10.1.33.0 
+P 10.1.33.0/24, 1 successors, FD is 2684416
+        via 10.1.4.3 (2684416/2172416), Serial0/0/1 
+        via 10.1.5.2 (2854912/2342912), Serial0/0/0

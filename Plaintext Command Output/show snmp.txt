@@ -1,0 +1,22 @@
+R1# show snmp 
+Chassis: FTX162883H0 
+Contact: Tyler B 
+Location: Atlanta
+7735 SNMP packets input
+    0 Bad SNMP version errors 
+    9 Unknown community name 
+    0 Illegal operation for community name supplied 
+    2 Encoding errors
+    51949 Number of requested variables
+    2 Number of altered variables
+    3740 Get-request PDUs 3954 Get-next PDUs
+    7 Set-request PDUs 
+    0 Input queue packet drops (Maximum queue size 1000)
+7850 SNMP packets output
+    0 Too big errors (Maximum packet size 1500) 
+    0 No such name errors 
+    0 Bad values errors 
+    0 General errors 
+    7263 Response PDUs
+    126 Trap PDUs 
+! Lines omitted for brevity

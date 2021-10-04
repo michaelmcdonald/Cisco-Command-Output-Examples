@@ -1,0 +1,9 @@
+R1# show ip sla summary 
+IPSLAs Latest Operation Summary 
+Codes: * active, ^ inactive, ~ pending 
+ID           Type        Destination       Stats      Return      Last
+                                           (ms)       Code        Run
+----------------------------------------------------------------------
+*1           icmp-echo   10.1.3.2          RTT=124    OK          15 seconds ago
+
+*2           icmp-echo   10.1.3.2          RTT=184    OK          11 seconds ago

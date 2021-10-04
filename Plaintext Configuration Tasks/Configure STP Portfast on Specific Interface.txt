@@ -1,0 +1,15 @@
+SW1# configure terminal
+SW1(config)# interface <type><number>
+SW1(config-if)# switchport mode access 
+SW1(config-if)# switchport access vlan <vlan-id>
+SW1(config-if)# spanning-tree portfast
+SW1(config-if)# end
+
+----------------------------------------
+
+SW1# configure terminal
+SW1(config)# interface gigabitEthernet 1/0/13 
+SW1(config-if)# switchport mode access 
+SW1(config-if)# switchport access vlan 10 
+SW1(config-if)# spanning-tree portfast
+SW1(config-if)# end

@@ -1,0 +1,28 @@
+R2# show ip access-lists
+Standard IP access list 1
+    10 permit 10.1.1.1 (107 matches) 
+    20 deny 10.1.1.0, wildcard bits 0.0.0.255 (4 matches) 
+    30 permit 10.0.0.0, wildcard bits 0.255.255.255 (10 matches) 
+
+
+R2# show access-lists 
+Standard IP access list 1 
+    10 permit 10.1.1.1 (107 matches) 
+    20 deny 10.1.1.0, wildcard bits 0.0.0.255 (4 matches) 
+    30 permit 10.0.0.0, wildcard bits 0.255.255.255 (10 matches)
+
+
+R1# show access-lists
+Extended IP access list barney
+    10 permit tcp host 10.1.1.2 eq www any 
+    20 deny udp host 10.1.1.1 10.1.2.0 0.0.0.255 
+    30 deny ip 10.1.3.0 0.0.0.255 10.1.2.0 0.0.0.255 
+    50 permit ip any any
+
+
+R1# show ip access-lists 
+ip access-list extended RoutingProtocolExample 
+    10 permit udp any any eq 520 
+    20 permit ospf any any 
+    30 permit eigrp any any 
+    remark a complete ACL would also need more statements here

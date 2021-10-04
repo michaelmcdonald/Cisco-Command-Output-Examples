@@ -1,0 +1,17 @@
+Basic BGP Configuration:
+
+R1# configure-terminal
+R1(config)# router bgp <asn>
+R1(config-router)# neighbor <neighbor-ip-addr> remote-as <remote-asn>
+
+
+
+Detailed BGP Configuration:
+
+R1# configure-terminal
+R1(config)# router bgp <asn>
+R1(config-router)# no bgp default ipv4-unicast
+R1(config-router)# neighbor <neighbor-ip-addr> remote-as <remote-asn>
+R1(config-router)# address-family ipv4
+R1(config-router-af)# neighbor <neighbor-ip-addr> activate
+R1(config-router-af)# exit-address-family

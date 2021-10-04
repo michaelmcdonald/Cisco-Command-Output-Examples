@@ -1,0 +1,4 @@
+SW1# show spanning-tree interface gi1/0/2 detail | i BPDU|Bpdu|Ethernet 
+ Port 2 (GigabitEthernet1/0/2) of VLAN0001 is designated forwarding
+   Bpdu filter is enabled 
+   BPDU: sent 113, received 84

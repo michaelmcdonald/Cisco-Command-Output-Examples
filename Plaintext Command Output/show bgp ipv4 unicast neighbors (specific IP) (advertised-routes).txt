@@ -1,0 +1,7 @@
+R1# show bgp ipv4 unicast neighbors 10.12.1.2 advertised-routes
+! Output omitted for brevity
+     Network          Next Hop            Metric LocPrf Weight Path
+*> 10.12.1.0/24     0.0.0.0                  0         32768 i
+*> 192.168.1.1/32   0.0.0.0                  0         32768 i
+
+Total number of prefixes 2

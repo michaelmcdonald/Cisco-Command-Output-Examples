@@ -1,0 +1,4 @@
+SW1# configure terminal 
+SW1(config)# interface <type><number>
+SW1(config-if)# switchport mode [trunk | dynamic {auto | desireable}]
+SW1(config-if)# end

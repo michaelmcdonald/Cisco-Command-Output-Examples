@@ -1,0 +1,5 @@
+R1# show ip route bgp | begin Gateway 
+Gateway of last resort is not set
+
+      192.168.2.0/32 is subnetted, 1 subnets
+B        192.168.2.2 [20/0] via 10.12.1.2, 00:06:12

@@ -1,0 +1,7 @@
+SW2# show lacp counters
+
+             LACPDUs        Marker      Marker Response    LACPDUs 
+Port       Sent   Recv    Sent   Recv     Sent   Recv      Pkts Err --------------------------------------------------------------------
+Channel group: 1 
+Gi1/0/1     23     23      0      0        0      0         0 
+Gi1/0/2     22      0      0      0        0      0         0

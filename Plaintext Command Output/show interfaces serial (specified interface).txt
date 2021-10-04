@@ -1,0 +1,10 @@
+R1# show interfaces serial 0/0/0 
+Serial0/0/0 is up, line protocol is up
+  Hardware is WIC MBRD Serial 
+  Description: link to R2 
+  Internet address is 192.168.2.1/24 
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation PPP, LCP Open
+  Open: IPCP, CDPCP, loopback not set 
+! Lines omitted for brevity

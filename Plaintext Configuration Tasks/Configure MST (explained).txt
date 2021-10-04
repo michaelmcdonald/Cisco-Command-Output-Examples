@@ -1,0 +1,17 @@
+SW1# configure terminal
+! Define MST as the STP mode:
+SW1(config)# spanning-tree mode mst
+!! OPTIONAL 🠗
+! Define the MST instance priority using one of two methods:
+SW1(config)# spanning-tree mst <instance_number> priority <value>
+! or
+SW1(config)# spanning-tree mst <instance_number> root {primary | secondary} [diameter <value>]
+!! OPTIONAL 🠕
+! Enter MST configuration mode and associate VLANs to an MST instance:
+SW1(config)# spanning-tree mst configuration
+SW1(config-mst)# instance <instance_number> vlan <vlan-id>
+! Specify the MST version number:
+SW1(config-mst)# revision <version>
+! Name the MST region:
+SW1(config-mst)# name <mst_region_name>
+SW1(config-mst)# end

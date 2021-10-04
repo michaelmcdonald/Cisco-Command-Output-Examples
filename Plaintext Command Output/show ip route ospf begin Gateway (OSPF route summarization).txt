@@ -1,0 +1,8 @@
+R2# show ip route ospf | begin Gateway 
+Gateway of last resort is not set
+
+      172.16.0.0/16 is variably subnetted, 4 subnets, 2 masks
+O        172.16.0.0/16 is a summary, 00:03:11, Null0
+O        172.16.1.0/24 [110/2] via 10.12.1.1, 00:01:26, GigabitEthernet0/0
+O        172.16.2.0/24 [110/2] via 10.12.1.1, 00:01:26, GigabitEthernet0/0
+O        172.16.3.0/24 [110/2] via 10.12.1.1, 00:01:26, GigabitEthernet0/0

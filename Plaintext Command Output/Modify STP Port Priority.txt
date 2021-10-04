@@ -1,0 +1,11 @@
+SW4# configure terminal 
+SW4(config)# interface <type><number>
+SW4(config-if)# spanning-tree port-priority <value>
+SW4(config-if)# end
+
+----------------------------------------
+
+SW4# configure terminal 
+SW4(config)# interface gi1/0/6 
+SW4(config-if)# spanning-tree port-priority 64
+SW4(config-if)# end

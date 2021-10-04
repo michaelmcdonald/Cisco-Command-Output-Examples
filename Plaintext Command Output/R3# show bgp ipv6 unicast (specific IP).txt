@@ -1,0 +1,8 @@
+R3# show bgp ipv6 unicast 2001:DB8::1/128 
+BGP routing table entry for 2001:DB8::1/128, version 9 
+Paths: (1 available, best #1, table default)
+  Not advertised to any peer 
+  Refresh Epoch 2
+  65200 65100
+    2001:DB8:0:23::2 (FE80::2) from 2001:DB8:0:23::2 (192.168.2.2) 
+      Origin incomplete, localpref 100, valid, external, best rx pathid: 0, tx pathid: 0x0

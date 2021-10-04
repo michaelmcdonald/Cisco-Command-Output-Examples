@@ -1,0 +1,9 @@
+R1# configure-terminal
+! define the SPAN source interface(s) (repeat for additional)
+R1(config)# monitor session <number> source interface <type><number> [- last-in-range] [rx | tx | both]
+! if sourcing from VLAN, define source VLAN (repeat for additional)
+R1(config)# monitor sessions <number> source vlan <vlan-id> [rx | tx | both]
+! define destination interface)
+R1(config)# monitor sessions <number> destination interface <type><number>
+R1(config)# end
+R1# wr

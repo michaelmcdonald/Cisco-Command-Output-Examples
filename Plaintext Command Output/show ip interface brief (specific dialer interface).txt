@@ -1,0 +1,3 @@
+R1# show ip interface brief dialer 2 
+Interface                  IP-Address      OK? Method Status          Protocol
+Dialer2                    10.1.3.2        YES IPCP   up              up

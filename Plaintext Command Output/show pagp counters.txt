@@ -1,0 +1,8 @@
+SW1# show pagp counters
+
+          Information         Flush        PAgP 
+Port      Sent    Recv     Sent    Recv    Err Pkts 
+---------------------------------------------------
+Channel group: 2 
+Gi1/0/3   31      51       0       0       0 
+Gi1/0/4   44      38       0       0       0

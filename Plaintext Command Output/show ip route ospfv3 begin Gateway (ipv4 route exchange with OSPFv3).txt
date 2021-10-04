@@ -1,0 +1,14 @@
+R4# show ip route ospfv3 | begin Gateway 
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 5 subnets, 2 masks
+
+O IA     10.1.1.0/24 [110/4] via 10.34.1.3, 00:00:39, GigabitEthernet0/3
+O IA     10.12.1.0/24 [110/3] via 10.34.1.3, 00:00:39, GigabitEthernet0/3
+O IA     10.23.1.0/24 [110/2] via 10.34.1.3, 00:00:39, GigabitEthernet0/3
+      192.168.1.0/32 is subnetted, 1 subnets
+O IA     192.168.1.1 [110/3] via 10.34.1.3, 00:00:39, GigabitEthernet0/3
+      192.168.2.0/32 is subnetted, 1 subnets
+O IA     192.168.2.2 [110/2] via 10.34.1.3, 00:00:39, GigabitEthernet0/3
+      192.168.3.0/32 is subnetted, 1 subnets
+O IA     192.168.3.3 [110/1] via 10.34.1.3, 00:00:39, GigabitEthernet0/3

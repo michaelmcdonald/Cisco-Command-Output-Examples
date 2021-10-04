@@ -1,0 +1,10 @@
+SW1# show ip route 
+! legend omitted for brevity
+
+      10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks
+C        10.1.10.0/24 is directly connected, Vlan10
+L        10.1.10.1/32 is directly connected, Vlan10
+C        10.1.20.0/24 is directly connected, Vlan20
+L        10.1.20.1/32 is directly connected, Vlan20
+C        10.1.30.0/24 is directly connected, Vlan30
+L        10.1.30.1/32 is directly connected, Vlan30

@@ -1,0 +1,21 @@
+SW1# configure terminal 
+SW1(config)# vlan <vlan-id>
+SW1(config-vlan)# name <vlan-name> 
+SW1(config-vlan)# interface <type><number> 
+SW1(config-if)# switchport mode access 
+SW1(config-if)# switchport access vlan <vlan-id>
+SW1(config-if)# end
+
+--------------------------------------------------------------------------------
+
+SW1# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+SW1(config)# vlan 99 
+SW1(config-vlan)# name Guests 
+SW1(config-vlan)# interface gi1/0/15 
+SW1(config-if)# switchport mode access 
+SW1(config-if)# switchport access vlan 99 
+SW1(config-if)# interface gi1/0/16 
+SW1(config-if)# switchport mode access 
+SW1(config-if)# switchport access vlan name Guest
+SW1(config-if)# end

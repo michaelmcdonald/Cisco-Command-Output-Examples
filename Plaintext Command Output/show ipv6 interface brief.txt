@@ -1,0 +1,23 @@
+SW1# show ipv6 interface brief
+! Output omitted for brevity 
+Vlan1                  [up/up] 
+    FE80::262:ECFF:FE9D:C547 
+    2001:1::1 
+Vlan10                 [up/up] 
+    FE80::262:ECFF:FE9D:C546 
+    2001:DB8:10::1 
+Vlan99                 [up/up] 
+    FE80::262:ECFF:FE9D:C55D 
+    2001:DB8:99::1 
+GigabitEthernet0/0     [down/down] 
+    unassigned 
+GigabitEthernet1/0/1   [down/down] 
+    unassigned 
+GigabitEthernet1/0/2   [up/up] 
+    unassigned 
+GigabitEthernet1/0/3   [up/up] 
+    unassigned 
+GigabitEthernet1/0/4   [down/down] 
+    unassigned 
+GigabitEthernet1/0/5   [down/down] 
+    Unassigned

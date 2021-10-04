@@ -1,0 +1,58 @@
+R2# show bgp ipv4 unicast neighbors 10.12.1.1
+! Output ommitted for brevity
+
+BGP neighbor is 10.12.1.1, remote AS65100, external link
+  BGP version 4, remote router ID 192.168.1.1 
+  BGP state = Established, up for 00:01:04 
+  Last read 00:00:10, last write 00:00:09, hold is 180, keepalive is 60 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled)
+
+  Neighbor capabilities:
+    Route refresh: advertised and received(new) 
+    Four-octets ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised and received
+    Enhanced Refresh Capability: advertised 
+    Multisession Capability:
+    Stateful switchover support enabled: NO for session 1 
+  Message statistics:
+    InQ depth is 0 
+    OutQ depth is 0
+
+                         Sent       Rcvd 
+    Opens:                  1          1 
+    Notifications:          0          0 
+    Updates:                0          0 
+    Keepalives:             2          2 
+    Route Refresh:          0          0 
+    Total:                  4          3 
+  Default minimum time between advertisement runs is 0 seconds
+
+For address family: IPv4 Unicast
+  Session: 10.12.1.1 
+  BGP table version 1, neighbor version 1/0
+  Output queue size : 0 
+  Index 1, Advertise bit 0
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               0          0
+    Prefixes Total:                 0          0
+    Implicit Withdraw:              0          0
+    Explicit Withdraw:              0          0
+    Used as bestpath:             n/a          0
+    Used as multipath:            n/a          0
+
+
+                                   Outbound    Inbound 
+  Local Policy Denied Prefixes:    --------    -------
+    Total:                                0          0 
+  Number of NLRIs in the update sent: max 0, min 0
+
+  Address tracking is enabled, the RIB does have a route to 10.12.1.1 
+  Connections established 2; dropped 1
+  Last reset 00:01:40, due to Peer closed the session
+  Transport(tcp) path-mtu-discovery is enabled 
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0 
+Mininum incoming TTL 0, Outgoing TTL 255 
+Local host: 10.12.1.2, Local port: 179 
+Foreign host: 10.12.1.1, Foreign port: 56824

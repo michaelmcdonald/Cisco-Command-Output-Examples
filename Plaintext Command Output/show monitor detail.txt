@@ -1,0 +1,14 @@
+SW1# show monitor detail 
+Session 1 
+---------
+Type                   : Local Session 
+Description           :- 
+Source Ports           :
+    RX Only            : Gi1/0/11-12
+    TX Only            : None
+    Both               : None 
+Source VLANs           :
+    RX Only            : None
+    TX Only            : None
+    Both               : None 
+! Lines omitted for brevity

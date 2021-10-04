@@ -1,0 +1,34 @@
+R1# configure-terminal
+R1(config)# router eigrp <as-number>
+R1(config-router)# network <ip-address> [wildcard-mask]
+!! optional
+R1(config-router)# eigrp router-id <id-value>
+R1(config-router)# maximum-paths <number>
+R1(config-router)# variance <multiplier>
+R1(config-router)# auto-summary
+R1(config)# interface <type> <number>
+R1(config-if)# ip hello-interval eigrp <as-number> <
+R1(config-if)# ip hold-time eigrp <as-number> <time>
+R1(config-if)# bandwidth <value>
+R1(config-if)# delay <value>
+!! end optional
+R1(config)# end
+R1# write
+
+
+
+Use the router eigrp as-number global command to enter EIGRP configuration mode and define the EIGRP autonomous system number (ASN).
+
+Configure one or more network ip-address [wildcard-mask] router subcommands. This enables EIGRP on any matched interface and causes EIGRP to advertise the connected subnet.
+
+(Optional) Use the eigrp router-id value router subcommand to set the EIGRP router ID (RID) explicitly. 
+
+(Optional) Use the maximum-paths number and variance multiplier router subcommands to configure support for multiple equal-cost routes.
+
+(Optional) Use the auto-summary router subcommand to enable automatic summarization of routes at the boundaries of classful IPv4 networks.
+
+(Optional) Use the auto-summary router subcommand to enable automatic summarization of routes at the boundaries of classful IPv4 networks.
+
+(Optional) Use the ip hello-interval eigrp asn time and ip hold-time eigrp asn time interface subcommands to change the interface Hello and hold timers.
+
+(Optional) Use the bandwidth value and delay value interface subcommands to impact metric calculations by tuning bandwidth and delay.

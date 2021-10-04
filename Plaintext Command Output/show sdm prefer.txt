@@ -1,0 +1,27 @@
+SW1# show sdm prefer 
+Showing SDM Template Info
+
+This is the Advanced (high scale) template.
+  Number of VLANs:                                 4094 
+  Unicast MAC addresses:                           32768 
+  Overflow Unicast MAC addresses:                  512 
+  IGMP and Multicast groups:                       4096 
+  Overflow IGMP and Multicast groups:              512 
+  Directly connected routes:                       16384 
+  Indirect routes:                                 7168 
+  Security Access Control Entries:                 3072 
+  QoS Access Control Entries:                      2560 
+  Policy Based Routing ACEs:                       1024 
+  Netflow ACEs:                                    768 
+  Wireless Input Microflow policer ACEs:           256 
+  Wireless Output Microflow policer ACEs:          256 
+  Flow SPAN ACEs:                                  256 
+  Tunnels:                                         256 
+  Control Plane Entries:                           512 
+  Input Netflow flows:                             8192 
+  Output Netflow flows:                            16384 
+  SGT/DGT and MPLS VPN entries:                    3840 
+  SGT/DGT and MPLS VPN Overflow entries:           512
+These numbers are typical for L2 and IPv4 features.
+Some features such as IPv6, use up double the entry size; 
+so only half as many entries can be created.

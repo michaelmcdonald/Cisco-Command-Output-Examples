@@ -1,0 +1,18 @@
+SW1# show monitor session all 
+Session 1 
+--------
+Type                     : Local Session
+Source Ports             :
+    RX Only              : Gi1/0/11-12
+Destination Ports        : Gi1/0/21
+    Encapsulation        : Native
+          Ingress        : Disabled
+
+Session 2 
+--------
+Type                     : Local Session
+Source VLANs             :
+    Both                 : 11
+Destination Ports        : Gi1/0/22
+    Encapsulation        : Native
+          Ingress        : Disabled

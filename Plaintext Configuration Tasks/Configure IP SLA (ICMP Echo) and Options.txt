@@ -1,0 +1,13 @@
+R1# configure-terminal
+R1(config)# ip sla <sla-number>
+R1#(config-ip-sla)# icmp-echo <dst-ip-addr> source-ip <src-ip-addr>      ! Echo from <src> to <dst> 
+R1#(config-ip-sla)# frequency <seconds>                                  ! Send it every 60 seconds; default 
+R1#(config-ip-sla)# threshold <milliseconds>                             ! Round Trip Time of 300 ms 
+R1#(config-ip-sla)# history filter all                                   ! KEEP all data in history 
+R1#(config-ip-sla)# history buckets-kept <num-of-buckets>                ! Limits data to 6 groups (buckets)
+R1#(config-ip-sla)# history lives-kept 1                                 !
+R1#(config-ip-sla)# exit
+!
+R1(config)# ip sla schedule <sla-number> life forever start-time now
+R1(config)# end
+R1# write

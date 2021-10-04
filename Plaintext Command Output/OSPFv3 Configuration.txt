@@ -1,0 +1,17 @@
+conf t
+ipv6 router ospf <process-id>
+! optionally configure interface(s) to be passive
+passive-interface <type><number>
+! manually configure router ID
+router-id <id-value>
+! else configure loopback IP
+interface loopback <number>
+ip address <address> <mask>
+! else configure interface IP
+interface <type><number>
+ip address <address> <mask>
+! configure interface(s) where OSPF should be enabled
+interface <type><number>
+ipv6 ospf <process-id> area <area-number>
+end
+write

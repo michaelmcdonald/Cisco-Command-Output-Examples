@@ -1,0 +1,12 @@
+SW1# show spanning-tree vlan 10 detail
+
+VLAN0010 is executing the rstp compatible Spanning Tree protocol
+ Bridge Identifier has priority 32768, sysid 10, address 0062.ec9d.c500 
+ Configured hello time 2, max age 20, forward delay 15, transmit hold-count 6 
+ We are the root of the spanning tree 
+ Topology change flag not set, detected flag not set 
+ Number of topology changes 42 last change occurred 01:02:09 ago
+         from GigabitEthernet1/0/2 
+ Times:  hold 1, topology change 35, notification 2 
+         hello 2, max age 20, forward delay 15 
+ Timers: hello 0, topology change 0, notification 0, aging 300

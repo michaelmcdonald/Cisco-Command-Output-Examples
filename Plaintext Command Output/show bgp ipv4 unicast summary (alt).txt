@@ -1,0 +1,4 @@
+R1# show bgp ipv4 unicast summary
+! Output omitted for brevity
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd 
+10.12.1.2       4        65200      11      10        9    0    0 00:04:56       2

@@ -1,0 +1,32 @@
+SW1# show udld Te1/1/3
+
+Interface Te1/1/3 
+---
+Port enable administrative configuration setting: Follows device default 
+Port enable operational state: Enabled 
+Current bidirectional state: Bidirectional
+Current operational state: Advertisement - Single neighbor detected 
+Message interval: 15000 ms 
+Time out interval: 5000 ms
+
+Port fast-hello configuration setting: Disabled 
+Port fast-hello interval: 0 ms 
+Port fast-hello operational state: Disabled 
+Neighbor fast-hello configuration setting: Disabled 
+Neighbor fast-hello interval: Unknown
+
+
+    Entry 1 
+    ---
+    Expiration time: 41300 ms 
+    Cache Device index: 1 
+    Current neighbor state: Bidirectional 
+    Device ID: 081C4FF8B0 
+    Port ID: Te1/1/3 
+    Neighbor echo 1 device: 062EC9DC50 
+    Neighbor echo 1 port: Te1/1/3
+    
+    TLV Message interval: 15 sec 
+    No TLV fast-hello interval 
+    TLV Time out interval: 5 
+    TLV CDP Device name: SW2

@@ -1,0 +1,21 @@
+R1# show interface virtual-access 1
+Virtual-Access1 is up, line protocol is up
+  Hardware is Virtual Access interface
+  MTU 1492 bytes, BW 100000 Kbit, DLY 100000 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Base PPPoE vaccess, loopback not set
+  DTR is pulsed for 5 seconds on reset
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters 18w0d
+  Input queue: 0/4096/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions

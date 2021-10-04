@@ -1,0 +1,14 @@
+R1# show standby 
+GigabitEthernet0/0 - Group 1 (version 2)
+  State is Active 
+    6 state changes, last state change 00:12:53
+  Virtual IP address is 10.1.1.1
+  Active virtual MAC address is 0000.0c9f.f001 
+    Local virtual MAC address is 0000.0c9f.f001 (v2 default) 
+  Hello time 3 sec, hold time 10 sec
+    Next hello sent in 1.696 secs 
+  Preemption disabled
+  Active router is local
+  Standby router is 10.1.1.129, priority 100 (expires in 8.096 sec) 
+  Priority 110 (configured 110) 
+  Group name is "HSRP-group-for-book" (cfgd)

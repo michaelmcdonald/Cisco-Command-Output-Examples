@@ -1,0 +1,9 @@
+SW2# show spanning-tree mst configuration 
+Name      [ENTERPRISE_CORE]
+Revision  2     Instances configured 3
+
+Instance Vlans mapped 
+-------- --------------------------------------------------------------------
+0        1-9,11-19,21-98,100-4094 
+1        10,20 
+2        99

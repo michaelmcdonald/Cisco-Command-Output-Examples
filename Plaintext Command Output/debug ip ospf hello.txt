@@ -1,0 +1,6 @@
+R1# debug ip ospf hello 
+OSPF hello events debugging is on 
+R1# 
+*Nov 15 14:05:10.616: OSPF-1 HELLO Gi0/0: Rcv hello from 10.1.44.4 area 0 10.1.1.4 
+*Nov 15 14:05:10.616: OSPF-1 HELLO Gi0/0: Mismatched hello parameters from 10.1.1.4 
+*Nov 15 14:05:10.616: OSPF-1 HELLO Gi0/0: Dead R 20 C 40, Hello R 5 C 10 Mask R 255.255.255.0 C 255.255.255.0

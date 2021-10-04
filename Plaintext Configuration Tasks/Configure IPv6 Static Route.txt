@@ -1,0 +1,10 @@
+R1# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+R1(config)# ipv6 unicast-routing 
+R1(config)# ipv6 route <network-addr>/<prefix-length> <next-hop-ip-addr>
+
+
+R1# configure terminal 
+Enter configuration commands, one per line. End with CNTL/Z. 
+R1(config)# ipv6 unicast-routing 
+R1(config)# ipv6 route 2001:db8:22::/64 2001:db8:12::2

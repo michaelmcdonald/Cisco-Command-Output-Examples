@@ -1,0 +1,26 @@
+R1# show bgp ipv6 unicast neighbors 2001:DB8:0:12::2
+! Output omitted for brevity
+BGP neighbor is 2001:DB8:0:12::2, remote AS 65200, external link 
+  BGP version 4, remote router ID 192.168.2.2 
+  BGP state = Established, up for 00:28:25 
+  Last read 00:00:54, last write 00:00:34, hold time is 180, keepalive interval is 60 seconds 
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled) 
+  Neighbor capabilities:
+    Route refresh: advertised and received(new) 
+    Four-octets ASN Capability: advertised and received 
+    Address family IPv6 Unicast: advertised and received 
+    Enhanced Refresh Capability: advertised and received 
+ ..
+ For address family: IPv6 Unicast 
+  Session: 2001:DB8:0:12::2 
+  BGP table version 13, neighbor version 13/0 
+  Output queue size : 0
+  Index 1, Advertise bit 0 
+  1 update-group member 
+  Slow-peer detection is disabled 
+  Slow-peer split-update-group dynamic is disabled 
+                                 Sent       Rcvd 
+  Prefix activity:               ----       ----
+    Prefixes Current:               3          5 (Consumes 520 bytes)
+    Prefixes Total:                 6         10

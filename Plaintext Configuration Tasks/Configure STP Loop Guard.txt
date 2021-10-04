@@ -1,0 +1,11 @@
+SW2# configure terminal 
+SW2(config)# interface <type><number> 
+SW2(config-if)# spanning-tree guard loop
+SW2(config-if)# end
+
+----------------------------------------
+
+SW2# configure terminal 
+SW2(config)# interface gi1/0/1 
+SW2(config-if)# spanning-tree guard loop
+SW2(config-if)# end

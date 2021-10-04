@@ -1,0 +1,5 @@
+R1# show controllers serial 0/0/0 
+Interface Serial0/0/0
+Hardware is SCC
+DCE V.35, clock rate 2000000 
+! lines omitted for brevity

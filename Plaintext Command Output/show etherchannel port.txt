@@ -1,0 +1,79 @@
+SW1# show etherchannel port
+! Output omitted for brevity
+                Channel-group listing: 
+                ----------------------
+! This is the header that indicates all the ports that are for the first
+! EtherChannel interface. Every member link interface will be listed 
+Group: 1
+---------
+               Ports in the group:
+               -------------------
+! This is the first member interface for interface Po1. This interface
+! is configured for LACP active 
+Port: Gi1/0/1 
+-----------
+Port state    = Up Mstr Assoc In-Bndl 
+Channel group = 1           Mode = Active          Gcchange = -
+Port-channel  = Po1         GC   =   -             Pseudo port-channel = Po1
+Port index    = 0           Load = 0x00            Protocol = LACP
+
+! This interface is configured with LACP fast packets, has a port priority
+! of 32,768 and is active in the bundle.
+
+Flags:  S - Device is sending Slow LACPDUs  F - Device is sending fast LACPDUs. 
+        A - Device is in active mode. P - Device is in passive mode.
+
+Local information:
+                            LACP port     Admin     Oper    Port       Port
+Port      Flags   State     Priority      Key       Key     Number     State                            
+Gi1/0/1   FA      bndl      32768         0x1       0x1     0x102      0x3F
+
+! This interface's partner is configured with LACP fast packets, has a system-id
+! of 0081.c4ff.8b00, a port priority of 32,768, and is active in the bundle
+! for 0d:00h:03m:38s.
+
+  Partner's information: 
+                   LACP port                        Admin  Oper    Port    Port
+Port      Flags    Priority  Dev ID          Age    Key    Key     Number  State                            
+Gi1/0/1   FA       32768     0081.c4ff.8b00   0s    0x1    0x1     0x102   0x3F
+
+Age of the port in the current state: 0d:00h:03m:38s
+
+..
+! This is the header that indicates all the ports that are for the second
+! EtherChannel interface. Every member link interface will be listed.
+
+Group: 2
+---------
+               Ports in the group:
+               -------------------
+! This is the first member interface for interface Po2. This interface
+! is configured for LACP active 
+
+Port: Gi1/0/3
+-----------
+Port state    = Up Mstr In-Bndl 
+Channel group = 2           Mode = Desireable-S1   Gcchange = -
+Port-channel  = Po2         GC   = 0x00020001      Pseudo port-channel = Po2
+Port index    = 0           Load = 0x00            Protocol =   PAgP
+
+! This interface is in a consistent state, has a neighbor with the
+! 0081.c4ff.8b00 address and has been in the current state for 54m:45s
+
+Flags:  S - Device is sending Slow LACPDUs  F - Device is sending fast LACPDUs. 
+        A - Device is in active mode. P - Device is in passive mode.
+Timers: H - Hello timer is running. Q - Quit timer is running.
+        S - Switching timer is running. I - Interface timer is running.
+
+Local information:
+                                  Hello    Partner  PAgP     Learning  Group
+Port      Flags   State   Timers  Interval Count   Priority   Method  Ifindex                            
+Gi1/0/1   FA      bndl    H       30s      1        128        Any      51
+
+Partner's information: 
+
+          Partner              Partner          Partner         Partner Group
+Port      Name                 Device ID        Port       Age  Flags   Cap.
+Gi1/0/1   SW2                  0081.c4ff.8b00   Gi1/0/3      1s SC      20001
+
+Age of the port in the current state: 0d:00h:54m:45s

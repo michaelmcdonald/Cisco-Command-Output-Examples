@@ -1,0 +1,7 @@
+SW2# show spanning-tree vlan 1 | b Interface 
+
+Interface           Role Sts Cost      Prio.Nbr Type 
+------------------- ---- --- --------- -------- -------------------
+Gi1/0/1             Root BKN*4         128.1    P2p *LOOP_Inc 
+Gi1/0/3             Root FWD 4         128.3    P2p 
+Gi1/0/4             Desg FWD 4         128.4    P2p

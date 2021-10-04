@@ -1,0 +1,22 @@
+R1# show interfaces dialer 2
+Dialer2 is up, line protocol is up (spoofing) 
+  Hardware is Unknown
+  Internet address is 10.1.3.2/32 
+  MTU 1492 bytes, BW 56 Kbit/sec, DLY 20000 usec, reliability 255/255, txload 1/255, rxload 1/255 
+  Encapsulation PPP, LCP Closed, loopback not set 
+  Keepalive set (10 sec)
+  DTR is pulsed for 1 seconds on reset
+  Interface is bound to Vi2 
+! Interface counter lines removed for brevity 
+Bound to:
+Virtual-Access2 is up, line protocol is up 
+  Hardware is Virtual Access interface 
+  MTU 1492 bytes, BW 56 Kbit/sec, DLY 20000 usec, reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation PPP, LCP Open 
+    Stopped: CDPCP 
+    Open: IPCP 
+PPPoE vaccess, cloned from Dialer2 
+  Vaccess status 0x44, loopback not set 
+  Keepalive set (10 sec)
+Interface is bound to Di2 (Encapsulation PPP) 
+! Counter lines removed for brevity

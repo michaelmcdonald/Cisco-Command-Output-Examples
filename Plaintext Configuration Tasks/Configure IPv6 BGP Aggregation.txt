@@ -1,0 +1,30 @@
+R1# configure-terminal
+R1(config)# router bgp <local-asn>
+R1(config-router)# bgp router-id <router-id> 
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# neighbor <neighbor-ipv6-addr> remote-as <remote-asn> 
+!
+R1(config-router)# address-family ipv6
+R1(config-router-af)# bgp scan-time 6 
+R1(config-router-af)# network <ipv6-network-addr>/<prefix-length> 
+R1(config-router-af)# aggregate-address <ipv6-network-addr>/<prefix-length> summary-only
+R1(config-router-af)# neighbor <neighbor-ipv6-addr> activate 
+R1(config-router-af)# exit-address-family
+R1(config-router)# end
+
+
+
+
+R1# configure-terminal
+R1(config)# router bgp 65200
+R1(config-router)# bgp router-id 192.168.2.2 
+R1(config-router)# bgp log-neighbor-changes 
+R1(config-router)# neighbor 2001:DB8:0:12::1 remote-as 65100 
+!
+R1(config-router)# address-family ipv6
+R1(config-router-af)# bgp scan-time 6 
+R1(config-router-af)# network 2001:DB8::2/128 
+R1(config-router-af)# aggregate-address 2001:DB8::/59 summary-only
+R1(config-router-af)# neighbor 2001:DB8:0:12::1 activate 
+R1(config-router-af)# exit-address-family
+R1(config-router)# end

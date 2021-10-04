@@ -1,0 +1,5 @@
+R2# show standby brief 
+                     P indicates configured to preempt.
+                     | 
+Interface   Grp  Pri P State   Active           Standby         Virtual IP
+Gi0/0       1    100   Standby 10.1.1.9         local           10.1.1.1

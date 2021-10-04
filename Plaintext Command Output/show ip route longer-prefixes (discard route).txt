@@ -1,0 +1,6 @@
+R1# show ip route 192.0.2.0 255.255.255.0 longer-prefixes 
+     192.0.2.0/24 is variably subnetted, 4 subnets, 4 masks
+S       192.0.2.0/24 is directly connected, Null0
+C       192.0.2.0/29 is directly connected, Loopback1 
+L       192.0.2.1/32 is directly connected, Loopback1 
+O       192.0.2.128/26 [110/2] via 10.2.2.2, 03:45:00, GigabitEthernet0/2

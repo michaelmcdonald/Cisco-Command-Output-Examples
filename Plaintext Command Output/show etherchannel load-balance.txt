@@ -1,0 +1,8 @@
+SW1# show etherchannel load-balance 
+EtherChannel Load-Balancing Configuration:
+        src-dst-mixed-ip-port
+
+EtherChannel Load-Balancing Addresses Used Per-Protocol: 
+Non-IP: Source XOR Destination MAC address
+  IPv4: Source XOR Destination IP address and TCP/UDP (layer-4) port number 
+  IPv6: Source XOR Destination IP address and TCP/UDP (layer-4) port number

@@ -1,0 +1,8 @@
+R1# debug eigrp fsm 
+EIGRP FSM Events/Actions debugging is on 
+R1# 
+*Nov 13 23:50:41.099: EIGRP-IPv4(1): Find FS for dest 10.1.33.0/24. FD is 2684416, RD is 2684416 on tid 0 
+*Nov 13 23:50:41.099: EIGRP-IPv4(1): 10.1.4.3 metric 72057594037927935/72057594037927936 
+*Nov 13 23:50:41.099: EIGRP-IPv4(1): 10.1.5.2 metric 2854912/2342912 found Dmin is 2854912 
+*Nov 13 23:50:41.099: DUAL: AS(1) RT installed 10.1.33.0/24 via 10.1.5.2 
+!

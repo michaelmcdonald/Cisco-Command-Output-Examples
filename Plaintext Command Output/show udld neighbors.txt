@@ -1,0 +1,5 @@
+SW1# show udld neighbors 
+
+Port     Device Name   Device ID     Port ID    Neighbor State 
+----     -----------   ---------     -------    --------------
+Te1/1/3  081C4FF8B0      1            Te1/1/3    Bidirectional

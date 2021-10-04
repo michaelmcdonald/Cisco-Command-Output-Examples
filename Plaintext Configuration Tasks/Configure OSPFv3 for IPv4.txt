@@ -1,0 +1,35 @@
+R1# configure-terminal
+! OSPFv3 still uses IPv6 link-local addresses so we have to to enable IPv6
+R1(config)# ipv6 unicast-routing
+R1(config)# interface <type><number>
+! IPv6 needs to be enabled on the specific interface, then enable OSPFv3
+R1(config-if)# ipv6 enable
+R1(config-if)# ospfv3 <process-id> ipv4 area <area-id>
+R1(config-if)# exit
+! Once you enable IPv6 on the interface, a link-local address is created. 
+! The routers can now establish a neighbor adjacency.
+! Create a loopback interface with an IP to provide an RID
+R1(config)# interface loopback <loopback-id>
+R1(config-if)# ip address <ip-address> <subnet-mask>
+R1(config-if)# ipv6 enable
+R1(config-if)# ospfv3 <process-id> ipv4 area <area-id>
+R1(config-if)# end
+
+
+
+R1# configure-terminal
+! OSPFv3 still uses IPv6 link-local addresses so we have to to enable IPv6
+R1(config)# ipv6 unicast-routing
+R1(config)# interface GigabitEthernet 3
+! IPv6 needs to be enabled on the specific interface, then enable OSPFv3
+R1(config-if)# ipv6 enable
+R1(config-if)# ospfv3 1 ipv4 area 0
+R1(config-if)# exit
+! Once you enable IPv6 on the interface, a link-local address is created. 
+! The routers can now establish a neighbor adjacency.
+! Create a loopback interface with an IP to provide an RID
+R1(config)# interface loopback 0
+R1(config-if)# ip address 2.2.2.2 255.255.255.0
+R1(config-if)# ipv6 enable
+R1(config-if)# ospfv3 1 ipv4 area 0
+R1(config-if)# end

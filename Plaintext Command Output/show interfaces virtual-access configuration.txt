@@ -1,0 +1,8 @@
+R1# show interfaces virtual-access 2 configuration
+Virtual-Access2 is a PPP over Ethernet link (sub)interface 
+Derived configuration : 109 bytes 
+!
+interface Virtual-Access2
+ mtu 1492
+ ppp chap hostname Fred
+ ppp chap password 0 Barney pulse-time 0 end

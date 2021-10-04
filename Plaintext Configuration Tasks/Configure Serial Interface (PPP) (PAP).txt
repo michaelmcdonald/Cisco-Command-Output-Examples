@@ -1,0 +1,45 @@
+CONFIGURE SERIAL INTERFACE (PPP) (WITH PAP)
+
+R1# configure-terminal
+! create a user / pass combo to match what is sent by R2
+R1(config)# username <R2-username> password <R2-pass>
+R1(config)# interface serial <number>
+R1(config-if)# ip address <address> <mask>
+R1(config-if)# encapsulation ppp
+R1(config-if)# ppp authentication pap
+R1(config-if)# ppp pap sent-username <R1-name> password <R1-pass>
+R1(config-if)# no shutdown
+! verify device has DCE cable, if so apply clock rate
+R1(config-if)# show controllers serial <number>
+R1(config-if)# clock rate <speed-in-bps>
+! set appropriate interface bandwidth
+R1(config-if)# bandwidth <speed-in-kpbs>
+R1(config-if)# description <description>
+R1(config-if)# end
+R1# wr
+
+--------------------------------------------------------------------------------
+
+
+<ol>
+<li>Define the username and password used by R2:
+<ol style="list-style-type: upper-alpha; padding-bottom: 0;">
+<li style="margin-left:1em">Use the <b>username <i>&lt;R2-name&gt;</i> password <i>&lt;R2-password&gt;</i></b> command in global configuration mode <u>on each router</u>, to define the name (<i>case-sensitive</i>) that will be sent by the neighboring router, and the matching password (<i>case-sensitive</i>).</li><br>
+</ol>
+</li>
+<li>Configure the serial interface for PPP, PAP, and other necessary settings:
+<ol style="list-style-type: upper-alpha; padding-bottom: 0;">
+<li style="margin-left:1em">Use the <b>ip address <i>&lt;address&gt; &lt;mask&gt;</i></b> command in serial interface configuration mode to configure the interface IP address.</li><br>
+<li style="margin-left:1em; padding-bottom: 0;">Use the <b>encapsulation ppp</b> command in interface configuration mode, on the serial interfaces <u>on each router</u>, to enable PPP on the interfaces.</li><br>
+<li style="margin-left:1em; padding-bottom: 0;">Use the <b>ppp authentication pap</b> command in interface configuration mode <u>on each router</u> to enable PAP on each interface.</li><br>
+<li style="margin-left:1em; padding-bottom: 0;">Use the ppp pap sent-username R1-USER password PASS1 command so that R2 knows what to expect.</li><br>
+<li style="margin-left:1em; padding-bottom: 0;">If the interface line status is administratively down, use the <b>no shutdown</b> command in interface configuration mode to enable the interface.</li><br>
+<li style="margin-left:1em; padding-bottom: 0;">If the serial link is a back-to-back serial link in a lab (<i>or a simulator</i>), use the <b>clock rate <i>&lt;speed&gt;</i></b> command in interface configuration mode to configure the clocking rate. (<i>Use this command only on the one router with the DCE cable (per the </i><b style="">show controllers serial <i>&lt;number&gt;</i></b><i> command</i>)).</li><br>
+</ol>
+</li><li>The following steps are always optional and have no impact on whether the link works and passes IP traffic:
+<ol style="list-style-type: upper-alpha; padding-bottom: 0;">
+<li style="margin-left:1em">Use the <b>bandwidth <i>&lt;speed-in-kbps&gt;</i></b> command in interface configuration mode to configure the link’s documented speed so that it matches the actual clock rate of the link.</li><br>
+<li style="margin-left:1em; padding-bottom: 0;">For documentation purposes, use the <b>description <i>&lt;text&gt;</i></b> command in interface configuration mode to configure a description of the purpose of the interface.</li>
+</ol>
+</li>
+</ol>

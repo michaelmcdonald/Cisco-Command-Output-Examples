@@ -1,0 +1,2 @@
+SW1# configure terminal 
+SW1(config)# lacp system-priority <value>

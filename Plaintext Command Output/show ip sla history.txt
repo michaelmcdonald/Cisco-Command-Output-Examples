@@ -1,0 +1,17 @@
+R1# show ip sla history 1
+        Point by point History
+Entry    = Entry number
+LifeI    = Life index
+BucketI  = Bucket index
+SampleI  = Sample index
+SampleT  = Sample start time (milliseconds)
+CompT    = RTT (milliseconds)
+Sense    = Response return code
+
+Entry LifeI      BucketI    SampleI    SampleT    CompT     Sense     TargetAddr
+1     1          11         1          59438868   108       1         10.1.3.2 
+1     1          12         1          59498868   188       1         10.1.3.2 
+1     1          13         1          59558868   280       1         10.1.3.2 
+1     1          14         1          59618868   88        1         10.1.3.2
+1     1          15         1          59678868   160       1         10.1.3.2 
+1     1          16         1          59738868   252       1         10.1.3.2

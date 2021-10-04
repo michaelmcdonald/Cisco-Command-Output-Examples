@@ -1,0 +1,13 @@
+R1# configure-terminal
+R1(config)# snmp-server group <groupname> v3 [no auth | auth | priv] pwrite v1default [access [ipv6] <acl-name>]
+! to configure users whose referenced group uses noauth security
+R1(config)# snmp-server user <username> <groupname> v3
+! to configure users whose referenced group uses auth security
+R1(config)# snmp-server user <username> <groupname> v3 auth [md5 | sha] <password>
+! to configure users whose referenced group uses priv security
+R1(config)# snmp-server user <username> <groupname> v3 auth priv [des | 3des | aes {128 | 192 | 256}] <encryption-key>
+! Enable SNMP agent to send notification messages
+R1(config)# snmp-server host {<hostname> | <ip-address>} [informs | traps] version 3 {noauth | auth | priv} <username>
+R1(config)# snmp-server enable traps
+R1(config)# end
+R1# wr

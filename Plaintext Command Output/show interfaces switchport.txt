@@ -1,0 +1,39 @@
+SW1# show interfaces gi1/0/5 switchport 
+Name: Gi1/0/5
+
+! The following line indicates if the port is shut or no shut 
+
+Switchport: Enabled 
+Administrative Mode: dynamic auto
+
+! The following line indicates if the port is acting as static access port, trunk
+! port, or if is down due to carrier detection (i.e. link down) 
+
+Operational Mode: down 
+Administrative Trunking Encapsulation: dot1q 
+Negotiation of Trunking: On
+
+! The following line displays the VLAN assigned to the access port 
+
+Access Mode VLAN: 1 (default) 
+Trunking Native Mode VLAN: 1 (default)
+Administrative Native VLAN tagging: enabled 
+Voice VLAN: none 
+Administrative private-vlan host-association: none 
+Administrative private-vlan mapping: none 
+Administrative private-vlan trunk native VLAN: none 
+Administrative private-vlan trunk Native VLAN tagging: enabled 
+Administrative private-vlan trunk encapsulation: dot1q 
+Administrative private-vlan trunk normal VLANs: none 
+Administrative private-vlan trunk associations: none 
+Administrative private-vlan trunk mappings: none 
+Operational private-vlan: none 
+Trunking VLANs Enabled: ALL 
+Pruning VLANs Enabled: 2-1001 
+Capture Mode Disabled 
+Capture VLANs Allowed: ALL
+
+Protected: false 
+Unknown unicast blocked: disabled 
+Unknown multicast blocked: disabled 
+Appliance trust: none

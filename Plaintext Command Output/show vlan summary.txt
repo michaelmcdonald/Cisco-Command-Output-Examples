@@ -1,0 +1,4 @@
+SW1# show vlan summary 
+Number of existing VLANs              : 8
+ Number of existing VTP VLANs         : 8
+ Number of existing extended VLANS    : 0
